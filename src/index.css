@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  --border: 3px;
+  --from: 30deg;
+  --distance: 46%;
+}
+.picture::after {
+    content: '';
+    border-radius: 999px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: conic-gradient(
+      from var(--from),
+      #e3aa46,
+      #35343c var(--distance),
+      transparent var(--distance)
+    );
+    -webkit-mask: radial-gradient(
+      farthest-side,
+      transparent calc(100% - var(--border)),
+      #fff calc(100% - var(--border) + 1px)
+    );
+    mask: radial-gradient(
+      farthest-side,
+      transparent calc(100% - var(--border)),
+      #fff calc(100% - var(--border) + 1px)
+    );
+  }
