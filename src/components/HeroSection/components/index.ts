@@ -1,2 +1,5 @@
 export { default as Circuit } from './Circuit'
+export { default as Navbar } from './Navbar'
+export { default as PersonalLinks } from './PersonalLinks'
+export * from './Picture'
 export { default as Title } from './Title'

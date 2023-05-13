@@ -1,12 +1,10 @@
 export const Picture = (): React.JSX.Element => {
   return (
-    <div className='picture relative p-10'>
+    <div className='relative p-10 picture max-w-[500px] max-h-[500px] '>
       <img
-        src='https://picsum.photos/id/823/720'
-        width='600'
-        height='600'
+        src='https://i.ibb.co/kcMD6hC/photo-2022-07-21-19-04-40.jpg'
         alt=''
-        className='rounded-full'
+        className='object-cover w-[500px] h[500px] rounded-full o aspect-square'
       />
     </div>
   )

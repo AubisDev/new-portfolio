@@ -18,7 +18,7 @@
     background: conic-gradient(
       from var(--from),
       #e3aa46,
-      #35343c var(--distance),
+      #2abfc7 var(--distance),
       transparent var(--distance)
     );
     -webkit-mask: radial-gradient(
@@ -32,3 +32,24 @@
       #fff calc(100% - var(--border) + 1px)
     );
   }
+
+
+.shineText{
+  background: linear-gradient(to right, #e3aa46 0, #e3a434, #f2a824 );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s infinite linear;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  50% {
+    background-position: 600px;
+  }
+  100% {
+    background-position: 600px;
+  }
+}

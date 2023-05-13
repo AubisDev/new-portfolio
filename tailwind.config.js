@@ -12,6 +12,9 @@ export default {
       fontFamily: {
         title: ['Rajdhani', 'sans-serif'],
         normal: ['Source Sans Pro', 'sans-serif']
+      },
+      backgroundImage: {
+        'hero-pattern': "url('/src/assets/bgpattern.svg')"
       }
     }
   },
