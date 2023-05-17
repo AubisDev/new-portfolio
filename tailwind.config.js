@@ -8,7 +8,8 @@ export default {
         lightbg: '#35343c',
         yellow: '#e3aa46',
         strong_yellow: '#faa002',
-        white_text: '#d9d9db'
+        white_text: '#d9d9db',
+        lightgray: '#35343c'
       },
       fontFamily: {
         title: ['Rajdhani', 'sans-serif'],
@@ -19,5 +20,5 @@ export default {
       }
     }
   },
-  plugins: []
+  plugins: [require('daisyui')]
 }

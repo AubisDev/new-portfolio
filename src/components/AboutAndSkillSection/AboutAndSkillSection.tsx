@@ -1,8 +1,12 @@
+import AboutMe from './components/AboutMe'
+import SkillsList from './components/SkillsList'
+
 const AboutAndSkillSection = () => {
   return (
-    <div className='w-4/5 h-screen min-h-screen bg-white'>
-      AboutAndSkillSection
-    </div>
+    <section className='flex flex-col w-4/5 h-screen text-white'>
+      <AboutMe />
+      <SkillsList />
+    </section>
   )
 }
 export default AboutAndSkillSection

@@ -1,6 +1,6 @@
-import downloadIcon from '@/assets/download-icon.svg'
-import githubIcon from '@/assets/github-icon.svg'
-import linkedinIcon from '@/assets/linkedin-icon.svg'
+import downloadIcon from '@/assets/svg/download-icon.svg'
+import githubIcon from '@/assets/svg/github-icon.svg'
+import linkedinIcon from '@/assets/svg/linkedin-icon.svg'
 
 const Personalanks = () => {
   const linkStyle =
