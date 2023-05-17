@@ -34,22 +34,19 @@
   }
 
 
-.shineText{
-  background: linear-gradient(to right, #e3aa46 0, #e3a434, #f2a824 );
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: shine 3s infinite linear;
+.blurText{
+  animation: blurtext 3s linear;
 }
 
-@keyframes shine {
+
+@keyframes blurtext {
   0% {
-    background-position: 0;
+    backdrop-filter: blur(16px);
   }
   50% {
-    background-position: 600px;
+    backdrop-filter: blur(16px);
   }
   100% {
-    background-position: 600px;
+    backdrop-filter: blur(16px);
   }
 }

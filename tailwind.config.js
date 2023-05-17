@@ -7,6 +7,7 @@ export default {
         appbg: '#2f2e36',
         lightbg: '#35343c',
         yellow: '#e3aa46',
+        strong_yellow: '#faa002',
         white_text: '#d9d9db'
       },
       fontFamily: {

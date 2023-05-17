@@ -11,7 +11,7 @@ const HeroSection = (): React.JSX.Element => {
     }, 3500)
   })
   return (
-    <main className='flex flex-col w-4/5 h-full m-auto '>
+    <main className='flex flex-col w-4/5 h-full min-h-screen m-auto '>
       <div className='z-50 flex flex-row items-center h-full px-20 justify-evenly'>
         {!typeAnimation ? (
           <TextWithTypeEffect />

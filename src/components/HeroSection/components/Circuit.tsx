@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion'
-import wire from '@/assets/wire.svg'
 
 const Circuit = (): React.JSX.Element => {
   return (
@@ -22,14 +21,14 @@ const Circuit = (): React.JSX.Element => {
           ]
         }}
         transition={{
-          duration: 6,
+          duration: 3,
           ease: 'easeInOut',
           repeat: Infinity,
           repeatType: 'loop'
           // repeatDelay: 1
         }}
       >
-        <line x1='0' y1='0' x2='54' y2='54' opacity='1.00'></line>
+        <motion.line x1='0' y1='0' x2='54' y2='54' opacity='1.00'></motion.line>
         <line x1='108' y1='0' x2='54' y2='54' opacity='1.00'></line>
         <line x1='108' y1='0' x2='162' y2='54' opacity='1.00'></line>
         <line x1='162' y1='0' x2='216' y2='54' opacity='1.00'></line>
