@@ -24,6 +24,7 @@ specifiers:
   react-type-animation: ^3.0.1
   swiper: ^9.3.2
   tailwindcss: ^3.3.2
+  tailwindcss-animated: ^1.0.0
   typescript: ^5.0.2
   vite: ^4.3.2
 
@@ -35,6 +36,7 @@ dependencies:
   react-dom: 18.2.0_react@18.2.0
   react-type-animation: 3.0.1_v2m5e27vhdewzwhryxwfaorcca
   swiper: 9.3.2
+  tailwindcss-animated: 1.0.0_tailwindcss@3.3.2
 
 devDependencies:
   '@types/node': 20.1.2
@@ -2534,6 +2536,14 @@ packages:
     engines: {node: '>= 4.7.0'}
     dependencies:
       ssr-window: 4.0.2
+    dev: false
+
+  /tailwindcss-animated/1.0.0_tailwindcss@3.3.2:
+    resolution: {integrity: sha512-Y1vI28MZlD4tl0DQ4rnngmnZh218ZiMgrMtEaCmst+xRMSy2bVN8Zav1F+3hJINrmRnZoQOiyzUUve/gC9LPPQ==}
+    peerDependencies:
+      tailwindcss: '>=3.1.0'
+    dependencies:
+      tailwindcss: 3.3.2
     dev: false
 
   /tailwindcss/3.3.2:

@@ -7,7 +7,7 @@ import Navbar from './components/HeroSection/components/Navbar'
 export const App = (): React.JSX.Element => {
   return (
     <div className='relative flex flex-col items-center w-screen h-auto overflow-hidden bg-appbg '>
-      <div className='absolute w-full h-full overflow-hidden'>
+      <div className='absolute w-full h-full'>
         <Circuit />
       </div>
       <Navbar />

@@ -44,7 +44,7 @@ export const skillData = [
     icon: nextjsIcon
   },
   {
-    skillName: 'git',
+    skillName: 'Git',
     icon: gitIcon,
     attribute:
       '<a href="https://iconscout.com/icons/git" target="_blank">Free Git Icon</a> by <a href="https://iconscout.com/contributors/icon-mafia">Icon Mafia</a> on <a href="https://iconscout.com">IconScout</a>'
@@ -56,7 +56,7 @@ export const skillData = [
       '<a href="https://iconscout.com/icons/tailwind-css" target="_blank">Free Tailwind Css Logo Icon</a> by <a href="https://iconscout.com/contributors/Redmatric%20Studio" target="_blank">Termicons</a>'
   },
   {
-    skillName: 'github',
+    skillName: 'Github',
     icon: githubIcon
   },
   {
