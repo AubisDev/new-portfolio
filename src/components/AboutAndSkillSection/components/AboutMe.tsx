@@ -1,6 +1,7 @@
 import softwareDeveloperIcon from '@/assets/images/software-dev.png'
 import { fadeIn } from '@/utils/motions'
 import { motion } from 'framer-motion'
+
 const AboutMe = () => {
   return (
     <div className='flex flex-row w-full px-20 relative items-center pb-20 justify-between'>

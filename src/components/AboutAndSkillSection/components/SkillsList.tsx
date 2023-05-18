@@ -1,11 +1,11 @@
 import { skillData } from '../utils/skills.utility'
 import { Swiper, SwiperSlide } from 'swiper/react'
+import { FreeMode, Autoplay } from 'swiper'
+import { motion } from 'framer-motion'
+import { fadeIn } from '@/utils/motions'
 import 'swiper/css'
 import 'swiper/css/free-mode'
 import 'swiper/css/pagination'
-import { FreeMode, Autoplay } from 'swiper'
-import { motion } from 'framer-motion'
-import { fadeIn, slideIn } from '@/utils/motions'
 
 const SkillsList = () => {
   return (
