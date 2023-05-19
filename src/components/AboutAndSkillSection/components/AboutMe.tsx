@@ -1,10 +1,11 @@
 import softwareDeveloperIcon from '@/assets/images/software-dev.png'
+import Divider from '@/components/Divider'
 import { fadeIn } from '@/utils/motions'
 import { motion } from 'framer-motion'
 
 const AboutMe = () => {
   return (
-    <div className='flex flex-row w-full px-20 relative items-center pb-20 justify-between'>
+    <div className='relative flex flex-row items-center justify-between w-full px-20 pb-20'>
       <motion.div
         variants={fadeIn('right', '', 0, 1)}
         initial='hidden'
@@ -12,7 +13,8 @@ const AboutMe = () => {
         viewport={{ once: true, amount: 0.25 }}
         className='flex flex-col mt-10'
       >
-        <h3 className='pb-2 text-4xl font-bold text-yellow'>Sobre mi</h3>
+        <h3 className='pb-2 text-4xl font-bold '>Sobre mi</h3>
+        <Divider/>
         <p className='w-4/5 max-w-[700px] leading-7 break-'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porta
           ipsum eleifend pulvinar mollis. Pellentesque vel aliquet nulla. Ut sed

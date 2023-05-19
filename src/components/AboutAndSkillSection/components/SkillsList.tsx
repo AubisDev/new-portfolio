@@ -6,6 +6,7 @@ import { fadeIn } from '@/utils/motions'
 import 'swiper/css'
 import 'swiper/css/free-mode'
 import 'swiper/css/pagination'
+import Divider from '@/components/Divider'
 
 const SkillsList = () => {
   return (
@@ -16,8 +17,9 @@ const SkillsList = () => {
       viewport={{ once: true, amount: 0.25 }}
       className='w-full h-auto'
     >
-      <h3 className='pb-4 text-4xl font-bold text-center text-yellow'>
+      <h3 className='flex flex-col pb-4 mx-20 text-4xl font-bold '>
         {`Skills`}
+        <Divider/>
       </h3>
       <Swiper
         slidesPerView={6}
@@ -48,7 +50,7 @@ const SkillsList = () => {
                   skill.skillName === 'Zustand' ? 'w-32' : 'w-20'
                 } h-20 `}
               />
-              <p className='font-bold text-gray-200 pt-2 '>{skill.skillName}</p>
+              <p className='pt-2 font-bold text-gray-200 '>{skill.skillName}</p>
             </div>
           </SwiperSlide>
         ))}

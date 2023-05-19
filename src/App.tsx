@@ -3,6 +3,7 @@ import AboutAndSkillSection from './components/AboutAndSkillSection/AboutAndSkil
 import HeroSection from './components/HeroSection/HeroSection'
 import { Circuit } from './components/HeroSection/components'
 import Navbar from './components/HeroSection/components/Navbar'
+import ProjectSection from './components/ProjectSection/ProjectSection'
 
 export const App = (): React.JSX.Element => {
   return (
@@ -13,6 +14,7 @@ export const App = (): React.JSX.Element => {
       <Navbar />
       <HeroSection />
       <AboutAndSkillSection />
+      <ProjectSection/>
     </div>
   )
 }

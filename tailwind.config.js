@@ -17,6 +17,9 @@ export default {
       },
       backgroundImage: {
         'hero-pattern': "url('/src/assets/bgpattern.svg')"
+      },
+      boxShadow: {
+        glowingUnderline: '0px 0px 2px 2px yellow'
       }
     }
   },
