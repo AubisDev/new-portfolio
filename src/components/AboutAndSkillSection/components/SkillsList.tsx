@@ -1,11 +1,12 @@
 import { skillData } from '../utils/skills.utility'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { FreeMode, Autoplay } from 'swiper'
+import { FreeMode, Autoplay, Navigation } from 'swiper'
 import { motion } from 'framer-motion'
 import { fadeIn } from '@/utils/motions'
 import 'swiper/css'
 import 'swiper/css/free-mode'
-import 'swiper/css/pagination'
+import 'swiper/css/navigation'
+
 import Divider from '@/components/Divider'
 
 const SkillsList = () => {
@@ -19,12 +20,13 @@ const SkillsList = () => {
     >
       <h3 className='flex flex-col pb-4 mx-20 text-4xl font-bold '>
         {`Skills`}
-        <Divider/>
+        <Divider />
       </h3>
       <Swiper
         slidesPerView={6}
         spaceBetween={10}
         freeMode={true}
+        navigation={true}
         loop={true}
         autoplay={{
           delay: 1000,
@@ -33,8 +35,7 @@ const SkillsList = () => {
         pagination={{
           clickable: true
         }}
-        navigation={true}
-        modules={[FreeMode, Autoplay]}
+        modules={[FreeMode, Autoplay, Navigation]}
         className='w-[87%] mySwiper relative '
       >
         {skillData.map((skill) => (

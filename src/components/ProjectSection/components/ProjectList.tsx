@@ -4,6 +4,7 @@ import { Project } from '@/types'
 import TechList from './TechList'
 import ProjectLinks from './ProjectLinks'
 import { staggerContainer } from '../../../utils/motions'
+import projectbg from '@/assets/svg/projectbg.svg'
 const ProjectList = () => {
   return (
     <motion.div
@@ -11,13 +12,18 @@ const ProjectList = () => {
       initial='hidden'
       whileInView='show'
       viewport={{ once: true, amount: 0.25 }}
-      className='relative flex flex-wrap justify-center w-full m-auto gap-x-6 gap-y-5'
+      className='relative flex flex-wrap justify-center w-full m-auto gap-x-6 gap-y-5 '
     >
+      <img
+        src={projectbg}
+        alt='bgpattern'
+        className='absolute object-cover w-full h-full opacity-20 z-1'
+      />
       {projectList.map((project: Project, i) => (
         <motion.div
           key={project.title + i}
           variants={staggerContainer()}
-          className='w-[43%] h-[350px] bg-lightgray group/item duration-300  shadow-lg rounded-lg relative'
+          className='w-[43%] h-[350px] bg-lightgray group/item duration-300  shadow-lg rounded-lg relative z-[500]'
         >
           <img
             src={project.desktopImg}
