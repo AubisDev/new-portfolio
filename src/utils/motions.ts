@@ -75,14 +75,13 @@ export const slideIn = (direction, type, delay, duration) => {
   }
 }
 
-export const staggerContainer = (staggerChildren, delayChildren) => {
+export const staggerContainer = () => {
   return {
-    hidden: {},
+    hidden: { opacity: 0, y: 50 },
     show: {
-      transition: {
-        staggerChildren: staggerChildren,
-        delayChildren: delayChildren || 0
-      }
+      y: 0,
+      opacity: 1,
+      transition: { staggerChildren: 0.25, duration: 0.5 }
     }
   }
 }
