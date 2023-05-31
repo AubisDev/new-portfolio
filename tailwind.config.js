@@ -9,7 +9,8 @@ export default {
         yellow: '#e3aa46',
         strong_yellow: '#faa002',
         white_text: '#d9d9db',
-        lightgray: '#35343c'
+        lightgray: '#35343c',
+        skyblue: '#7bfaf6'
       },
       fontFamily: {
         title: ['Rajdhani', 'sans-serif'],

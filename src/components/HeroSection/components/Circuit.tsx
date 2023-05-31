@@ -10,7 +10,7 @@ const Circuit = (): React.JSX.Element => {
     >
       <motion.g
         stroke-width='2'
-        stroke='rgba(252, 211, 3)'
+        stroke='rgba(123,250,246)'
         fill='none'
         stroke-linecap='butt'
         initial={{ pathLength: 0.25 }}

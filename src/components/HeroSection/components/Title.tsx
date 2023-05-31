@@ -17,7 +17,7 @@ const Title = (): React.JSX.Element => {
         <h1 className='pb-4 text-4xl font-bold text-title text-white_text '>
           Hi, I'm <span className='text-5xl text-yellow'>Aubis Sanchez</span>
         </h1>
-        <h3 className='text-3xl flex text-title font-bold text-[#639fff] max-w-[300px] rounded-xl pb-4  '>
+        <h3 className='text-3xl flex text-title font-bold text-skyblue max-w-[300px] rounded-xl pb-4  '>
           Frontend Developer
         </h3>
         <p className='w-4/5 text-base text-white text-normal '>

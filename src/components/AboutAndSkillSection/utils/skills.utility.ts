@@ -12,13 +12,13 @@ import githubIcon from '@/assets/svg/github-icon.svg'
 
 export const skillData = [
   {
-    skillName: 'html',
+    skillName: 'HTML',
     icon: htmlIcon,
     attribute:
       '<a href="https://iconscout.com/icons/html" target="_blank">Free Html Logo Icon</a> by <a href="https://iconscout.com/contributors/jagathish">Jagathish Saravanan</a> on <a href="https://iconscout.com">IconScout</a>'
   },
   {
-    skillName: 'css',
+    skillName: 'CSS3',
     icon: cssIcon,
     attribute:
       '<a href="https://iconscout.com/icons/css3" target="_blank">Free Css3 Logo Icon</a> by <a href="https://iconscout.com/contributors/unicons" target="_blank">Unicons Font</a>'
