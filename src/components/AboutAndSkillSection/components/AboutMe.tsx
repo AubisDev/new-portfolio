@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 
 const AboutMe = () => {
   return (
-    <div className='relative flex flex-row items-center justify-between w-full px-20 pb-20'>
+    <div className='relative flex flex-row items-center justify-between w-4/5 px-20 pb-20 m-auto '>
       <motion.div
         variants={fadeIn('right', '', 0, 1)}
         initial='hidden'
@@ -14,7 +14,7 @@ const AboutMe = () => {
         className='flex flex-col mt-10'
       >
         <h3 className='pb-2 text-4xl font-bold '>Sobre mi</h3>
-        <Divider/>
+        <Divider />
         <p className='w-4/5 max-w-[700px] leading-7 break-'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porta
           ipsum eleifend pulvinar mollis. Pellentesque vel aliquet nulla. Ut sed

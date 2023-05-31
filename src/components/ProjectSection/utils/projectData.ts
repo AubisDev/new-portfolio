@@ -19,7 +19,9 @@ export const projectList: Project[] = [
       'Yup',
       'React Responsive',
       'uuid'
-    ]
+    ],
+    repositoryLink: 'https://github.com/AubisDev/pokemon_game',
+    liveDemoLink: 'https://pokemon-game-phi.vercel.app/'
   },
   {
     title: 'Araney e-commerce',
@@ -38,7 +40,9 @@ export const projectList: Project[] = [
       'Axios',
       'Firebase',
       'Sweet-Alert2'
-    ]
+    ],
+    repositoryLink: 'https://github.com/AubisDev/Araney-ecommerce',
+    liveDemoLink: 'https://araney-ecommerce.vercel.app/'
   },
   {
     title: 'Pokemon battle simulator',
@@ -58,7 +62,9 @@ export const projectList: Project[] = [
       'Yup',
       'React Responsive',
       'uuid'
-    ]
+    ],
+    repositoryLink: 'https://github.com/AubisDev/pokemon_game',
+    liveDemoLink: 'https://pokemon-game-phi.vercel.app/'
   },
   {
     title: 'Araney e-commerce',
@@ -77,7 +83,9 @@ export const projectList: Project[] = [
       'Axios',
       'Firebase',
       'Sweet-Alert2'
-    ]
+    ],
+    repositoryLink: 'https://github.com/AubisDev/Araney-ecommerce',
+    liveDemoLink: 'https://araney-ecommerce.vercel.app/'
   },
   {
     title: 'Pokemon battle simulator',
@@ -97,7 +105,9 @@ export const projectList: Project[] = [
       'Yup',
       'React Responsive',
       'uuid'
-    ]
+    ],
+    repositoryLink: 'https://github.com/AubisDev/pokemon_game',
+    liveDemoLink: 'https://pokemon-game-phi.vercel.app/'
   },
   {
     title: 'Araney e-commerce',
@@ -116,6 +126,8 @@ export const projectList: Project[] = [
       'Axios',
       'Firebase',
       'Sweet-Alert2'
-    ]
+    ],
+    repositoryLink: 'https://github.com/AubisDev/Araney-ecommerce',
+    liveDemoLink: 'https://araney-ecommerce.vercel.app/'
   }
 ]

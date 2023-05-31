@@ -9,4 +9,6 @@ type Project = {
   mobileImg: string
   githubLink: string
   techs: string[]
+  repositoryLink: string
+  liveDemoLink: string
 }

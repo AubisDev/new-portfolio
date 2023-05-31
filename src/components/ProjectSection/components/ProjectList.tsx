@@ -17,7 +17,7 @@ const ProjectList = () => {
       <img
         src={projectbg}
         alt='bgpattern'
-        className='absolute object-cover w-full h-full opacity-20 z-1'
+        className='absolute object-cover w-full h-full opacity-50 z-1'
       />
       {projectList.map((project: Project, i) => (
         <motion.div
@@ -38,7 +38,10 @@ const ProjectList = () => {
           >
             <ProjectTitle title={project.title} />
             <TechList techs={project.techs} />
-            <ProjectLinks />
+            <ProjectLinks
+              repositoryLink={project.repositoryLink}
+              liveDemoLink={project.liveDemoLink}
+            />
           </motion.div>
         </motion.div>
       ))}
