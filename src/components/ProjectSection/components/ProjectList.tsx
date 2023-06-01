@@ -52,7 +52,7 @@ export default ProjectList
 
 const ProjectTitle = ({ title }: { title: string }) => {
   return (
-    <p className='text-3xl font-bold text-center capitalize text-yellow '>
+    <p className='text-3xl font-bold text-center capitalize text-skyblue '>
       {title}
     </p>
   )
