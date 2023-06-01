@@ -22,7 +22,7 @@ body{
     width: 100%;
     background: conic-gradient(
       from var(--from),
-      #e3aa46,
+      #54ffa4,
       #2abfc7 var(--distance),
       transparent var(--distance)
     );

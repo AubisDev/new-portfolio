@@ -14,13 +14,13 @@ const Title = (): React.JSX.Element => {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.7 }}
       >
-        <h1 className='pb-4 text-4xl font-bold text-title text-white_text '>
+        <h1 className='pb-4 text-4xl font-bold text-title text-white '>
           Hi, I'm{' '}
           <span className='text-5xl text-skyblue drop-shadow-3xl'>
             Aubis Sanchez
           </span>
         </h1>
-        <h3 className='text-3xl flex text-title font-bold text-skyblue max-w-[300px] rounded-xl pb-4  '>
+        <h3 className='text-3xl flex text-title font-bold text-[#7affc3]/90 max-w-[300px] rounded-xl pb-4  '>
           Frontend Developer
         </h3>
         <p className='w-4/5 text-base text-white text-normal '>
