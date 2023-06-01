@@ -6,30 +6,30 @@ const Navbar = (): React.JSX.Element => {
   }
   return (
     <nav className='container w-4/5 absolute top-0 overflow-hidden z-[500]'>
-      <div className=' h-[10vh] flex flex-row items-center m-auto [&>*]:px-6 [&>*]:py-3 justify-between   text-yellow '>
+      <div className=' h-[10vh] flex flex-row items-center m-auto [&>*]:px-6 [&>*]:py-3 justify-between   text-skyblue '>
         <div>
-          <img src={myLogo} alt='AubisLogo' className=' w-52 h-40' />
+          <img src={myLogo} alt='AubisLogo' className='h-40 w-52' />
         </div>
-        <div className='flex [&>*]:px-10 [&>*]:py-3 mr-6 text-lg'>
-          <button
+        <ul className='flex [&>*]:px-8 [&>*]:py-3 mr-6 text-base '>
+          <li
             onClick={() => onClickToSection('about')}
-            className='flex items-center text-gray-300 hover:bg-yellow cursor-pointer'
+            className='flex items-center text-gray-300 duration-300 rounded-lg cursor-pointer hover:bg-skyblue hover:text-appbg'
           >
             About
-          </button>
-          <button
+          </li>
+          <li
             onClick={() => onClickToSection('projects')}
-            className='flex items-center text-gray-300 hover:bg-yellow cursor-pointer'
+            className='flex items-center text-gray-300 duration-300 rounded-lg cursor-pointer hover:bg-skyblue hover:text-appbg'
           >
             Projects
-          </button>
-          <button
+          </li>
+          <li
             onClick={() => onClickToSection('contact')}
-            className='flex items-center text-gray-300 hover:bg-yellow cursor-pointer'
+            className='flex items-center text-gray-300 duration-300 rounded-lg cursor-pointer hover:bg-skyblue hover:text-appbg'
           >
             Contact
-          </button>
-        </div>
+          </li>
+        </ul>
       </div>
     </nav>
   )

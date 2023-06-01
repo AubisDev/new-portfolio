@@ -1,34 +1,20 @@
-import downloadIcon from '@/assets/svg/download-icon.svg'
-import githubIcon from '@/assets/svg/github-icon.svg'
-import linkedinIcon from '@/assets/svg/linkedin-icon.svg'
+import DownloadIcon from '@/components/svgs/DownloadIcon'
+import GithubIcon from '@/components/svgs/GithubIcon'
+import LinkedinIcon from '@/components/svgs/LinkedinIcon'
 
 const Personalanks = () => {
-  const linkStyle =
-    'flex items-center p-2 text-white duration-300 rounded-lg  hover:bg-yellow cursor-pointer'
+  const linkStyle = 'flex items-center text-white logo-wrapper'
   return (
     <footer className='pt-4'>
-      <ul className='flex flex-row py-2 [&>*]:flex [&>*]:text-sm [&>button]:text-base font-semibold'>
+      <ul className='flex flex-row py-2 [&>*]:flex [&>*]:text-sm [&>button]:text-base font-semibold '>
         <button className={linkStyle}>
-          <img
-            src={downloadIcon}
-            alt='CV'
-            className='w-[1.45rem] h-[1.45rem] pr-1 text-white '
-          />
-          Resume
+          <DownloadIcon />
         </button>
         <button className={`${linkStyle} mx-2`}>
-          <img
-            src={linkedinIcon}
-            alt='linkedin'
-            className='w-[1.45rem] h-[1.45rem] '
-          />
+          <LinkedinIcon />
         </button>
         <button className={linkStyle}>
-          <img
-            src={githubIcon}
-            alt='github'
-            className='w-[1.45rem] h-[1.45rem]  text-white'
-          />
+          <GithubIcon />
         </button>
       </ul>
     </footer>
