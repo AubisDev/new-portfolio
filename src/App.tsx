@@ -1,5 +1,6 @@
 import './App.css'
 import AboutAndSkillSection from './components/AboutAndSkillSection/AboutAndSkillSection'
+import ContactSection from './components/ContactSection/ContactSection'
 import HeroSection from './components/HeroSection/HeroSection'
 import { Circuit } from './components/HeroSection/components'
 import Navbar from './components/HeroSection/components/Navbar'
@@ -14,7 +15,8 @@ export const App = (): React.JSX.Element => {
       <Navbar />
       <HeroSection />
       <AboutAndSkillSection />
-      <ProjectSection/>
+      <ProjectSection />
+      <ContactSection />
     </div>
   )
 }
