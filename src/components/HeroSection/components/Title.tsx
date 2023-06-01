@@ -15,7 +15,10 @@ const Title = (): React.JSX.Element => {
         transition={{ duration: 0.7 }}
       >
         <h1 className='pb-4 text-4xl font-bold text-title text-white_text '>
-          Hi, I'm <span className='text-5xl text-skyblue'>Aubis Sanchez</span>
+          Hi, I'm{' '}
+          <span className='text-5xl text-skyblue drop-shadow-3xl'>
+            Aubis Sanchez
+          </span>
         </h1>
         <h3 className='text-3xl flex text-title font-bold text-skyblue max-w-[300px] rounded-xl pb-4  '>
           Frontend Developer

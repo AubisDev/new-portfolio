@@ -7,7 +7,7 @@ const AboutMe = () => {
   return (
     <div className='relative flex flex-row items-center justify-between w-4/5 px-20 pb-20 m-auto '>
       <motion.div
-        variants={fadeIn('right', '', 0, 1)}
+        variants={fadeIn('right', '', 0.5, 1)}
         initial='hidden'
         whileInView='show'
         viewport={{ once: true, amount: 0.25 }}

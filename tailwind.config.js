@@ -20,7 +20,11 @@ export default {
         projectbg: "url('/src/assets/projectbg.svg')"
       },
       boxShadow: {
-        glowingUnderline: '0px 0px 2px 2px yellow'
+        glowingUnderline: '0px 0px 2px 2px yellow',
+        titleShadow: '1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue'
+      },
+      dropShadow: {
+        '3xl': '0 0 100px rgba(123,250,246,0.55)'
       }
     }
   },
