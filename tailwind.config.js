@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
@@ -9,14 +10,16 @@ export default {
         strong_yellow: '#faa002',
         white_text: '#d9d9db',
         lightgray: '#35343c',
-        skyblue: '#7bfaf6'
+        skyblue: '#7bfaf6',
+        secondary: '#039296',
+        light_secondary: '#2bc0c7'
       },
       fontFamily: {
         title: ['Rajdhani', 'sans-serif'],
         normal: ['Source Sans Pro', 'sans-serif']
       },
       backgroundImage: {
-        projectbg: "url('/src/assets/projectbg.svg')"
+        projectbg: "url('/src/assets/svg/bgpattern.svg')"
       },
       boxShadow: {
         glowingUnderline: '0px 0px 2px 2px yellow',

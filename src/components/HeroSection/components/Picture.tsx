@@ -6,7 +6,7 @@ export const Picture = (): React.JSX.Element => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      className='relative p-10 picture max-w-[500px] max-h-[500px] z-50 '
+      className={`picture relative p-10  max-w-[500px] max-h-[500px] z-50`}
     >
       <motion.img
         initial={{ opacity: 0, backdropFilter: 'blur(16px)' }}

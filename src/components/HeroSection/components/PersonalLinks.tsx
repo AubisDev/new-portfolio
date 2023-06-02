@@ -6,7 +6,8 @@ const GITHUB_LINK = 'https://github.com/AubisDev'
 const LINKEDIN_LINK = 'https://www.linkedin.com/in/aubis-sanchez-torres/'
 
 const Personalanks = () => {
-  const linkStyle = 'flex items-center text-white logo-wrapper'
+  const linkStyle =
+    'flex items-center text-gray-700 dark:text-white logo-wrapper '
   return (
     <footer className='pt-4'>
       <ul className='flex flex-row py-2 [&>*]:flex [&>*]:text-sm [&>button]:text-base font-semibold '>

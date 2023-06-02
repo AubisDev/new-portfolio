@@ -5,6 +5,7 @@ import TechList from './TechList'
 import ProjectLinks from './ProjectLinks'
 import { staggerContainer } from '../../../utils/motions'
 import projectbg from '@/assets/svg/projectbg.svg'
+
 const ProjectList = () => {
   return (
     <motion.div
@@ -12,18 +13,18 @@ const ProjectList = () => {
       initial='hidden'
       whileInView='show'
       viewport={{ once: true, amount: 0.25 }}
-      className='relative flex flex-wrap justify-center w-full m-auto gap-x-6 gap-y-5 '
+      className='relative flex flex-wrap justify-center w-4/5 m-auto gap-x-6 gap-y-5 pb-[10rem]'
     >
-      <img
+      {/* <img
         src={projectbg}
         alt='bgpattern'
         className='absolute object-cover w-full h-full opacity-50 z-1'
-      />
+      /> */}
       {projectList.map((project: Project, i) => (
         <motion.div
           key={project.title + i}
           variants={staggerContainer()}
-          className='w-[43%] h-[350px] bg-lightgray group/item duration-300  shadow-lg rounded-lg relative z-[500]'
+          className='w-[40%] h-[250px] bg-lightgray group/item duration-300  shadow-lg rounded-lg relative z-[500]'
         >
           <img
             src={project.desktopImg}
@@ -34,7 +35,7 @@ const ProjectList = () => {
             initial={{ opacity: 0 }}
             whileHover={{ opacity: 1 }}
             transition={{ duration: 0.4, ease: easeIn, type: 'spring' }}
-            className='invisible flex-col group-hover/item:visible group/info absolute flex items-center justify-between p-12 text-gray-900 rounded-lg bg-black bg-opacity-[90%] h-full w-full z-[200]'
+            className='invisible flex-col group-hover/item:visible group/info absolute flex items-center justify-between p-4 text-gray-900 rounded-lg bg-gray-800/90 dark:bg-black/90 h-full w-full z-[200]'
           >
             <ProjectTitle title={project.title} />
             <TechList techs={project.techs} />
