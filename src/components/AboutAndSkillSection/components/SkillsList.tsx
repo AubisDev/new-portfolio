@@ -18,8 +18,8 @@ const SkillsList = () => {
       viewport={{ once: true, amount: 0.25 }}
       className='w-4/5 h-auto m-auto mb-32'
     >
-      <h3 className='flex flex-col pb-4 mx-20 text-4xl font-bold '>
-        {`Skills`}
+      <h3 className='flex flex-col pb-4 mx-20 text-3xl font-bold uppercase '>
+        Skills
         <Divider />
       </h3>
       <Swiper

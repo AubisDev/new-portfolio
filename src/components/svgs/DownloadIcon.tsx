@@ -16,7 +16,7 @@ const DownloadIcon = () => {
         <path d='M12 15V3m0 12l-4-4m4 4l4-4' />
         <path d='M2 17l.621 2.485A2 2 0 0 0 4.561 21H19.439a2 2 0 0 0 1.94-1.515L22 17' />
       </svg>
-      <span className='pl-1'>Download</span>
+      <span className='pl-1 text-base'>Resume</span>
     </div>
   )
 }

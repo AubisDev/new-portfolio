@@ -16,16 +16,7 @@ const Circuit = (): React.JSX.Element => {
         initial={{ pathLength: 0.25 }}
         animate={{
           pathLength: 1,
-          strokeOpacity: [
-            0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 0.9, 0.8, 0.7, 0.6, 0.5, 0.4
-          ]
-        }}
-        transition={{
-          duration: 3,
-          ease: 'easeInOut',
-          repeat: Infinity,
-          repeatType: 'loop'
-          // repeatDelay: 1
+          strokeOpacity: [0.5]
         }}
       >
         <motion.line x1='0' y1='0' x2='54' y2='54' opacity='1.00'></motion.line>

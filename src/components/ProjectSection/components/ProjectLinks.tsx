@@ -34,7 +34,7 @@ const ProjectLinks = ({ liveDemoLink, repositoryLink }: ProjectLinksProps) => {
           className='w-6 h-6 pl-2 mt-1'
         />
       </a>
-      <button className='flex flex-row items-center px-3 py-1 mt-1 font-semibold duration-300 border-white rounded-md bg-yellow hover:bg-strong_yellow'>
+      <button className='flex flex-row items-center px-3 py-1 mt-1 font-semibold duration-300 bg-yellow-300 border-white rounded-md hover:bg-yellow-500'>
         Watch preview
         <img src={PlayIcon} alt='new tab icon' className='w-6 h-6 pl-2 mt-1' />
       </button>

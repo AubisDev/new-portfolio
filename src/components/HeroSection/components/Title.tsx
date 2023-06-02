@@ -1,5 +1,6 @@
 import PersonalLinks from './PersonalLinks'
 import { motion } from 'framer-motion'
+import { onClickToSection } from '@/utils/common'
 
 const Title = (): React.JSX.Element => {
   return (
@@ -14,19 +15,25 @@ const Title = (): React.JSX.Element => {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.7 }}
       >
-        <h1 className='pb-4 text-4xl font-bold text-title text-white '>
+        <h1 className='pb-4 text-4xl font-bold text-white text-title '>
           Hi, I'm{' '}
           <span className='text-5xl text-skyblue drop-shadow-3xl'>
             Aubis Sanchez
           </span>
         </h1>
-        <h3 className='text-3xl flex text-title font-bold text-[#7affc3]/90 max-w-[300px] rounded-xl pb-4  '>
+        <h3 className='text-3xl flex text-title font-bold text-sky-300 max-w-[350px] rounded-xl pb-4  '>
           Frontend Developer
         </h3>
-        <p className='w-4/5 text-base text-white text-normal '>
-          There's nothing like threatening to go live with a bunch of Bill
-          Murray pictures on a website to 'encourage' your clients to send you
-          their content faster
+        <p className='w-4/5 text-lg text-white z-[500]'>
+          Welcome to my portfolio. I am a technology enthusiast person and that
+          is why I became a developer. Eager to work for creating or maintaining
+          projects.{' '}
+          <button
+            className='text-gray-300 duration-300 hover:text-skyblue'
+            onClick={() => onClickToSection('contact')}
+          >
+            Tell me about your project and how can I help you?
+          </button>
         </p>
         <PersonalLinks />
       </motion.div>

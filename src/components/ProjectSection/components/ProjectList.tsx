@@ -34,7 +34,7 @@ const ProjectList = () => {
             initial={{ opacity: 0 }}
             whileHover={{ opacity: 1 }}
             transition={{ duration: 0.4, ease: easeIn, type: 'spring' }}
-            className='invisible flex-col group-hover/item:visible group/info absolute flex items-center justify-between p-12 text-gray-900 rounded-lg bg-black bg-opacity-[85%] h-full w-full z-[200]'
+            className='invisible flex-col group-hover/item:visible group/info absolute flex items-center justify-between p-12 text-gray-900 rounded-lg bg-black bg-opacity-[90%] h-full w-full z-[200]'
           >
             <ProjectTitle title={project.title} />
             <TechList techs={project.techs} />

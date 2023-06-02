@@ -1,4 +1,4 @@
-import softwareDeveloperIcon from '@/assets/images/software-dev.png'
+import CoderIcon from '@/assets/svg/coder.svg'
 import Divider from '@/components/Divider'
 import { fadeIn } from '@/utils/motions'
 import { motion } from 'framer-motion'
@@ -13,15 +13,16 @@ const AboutMe = () => {
         viewport={{ once: true, amount: 0.25 }}
         className='flex flex-col mt-10'
       >
-        <h3 className='pb-2 text-4xl font-bold '>Sobre mi</h3>
+        <h3 className='text-3xl font-bold uppercase'>Sobre mi</h3>
         <Divider />
         <p className='w-4/5 max-w-[700px] leading-7 break-'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porta
-          ipsum eleifend pulvinar mollis. Pellentesque vel aliquet nulla. Ut sed
-          nunc tempus, commodo velit volutpat, dapibus dolor. Fusce id sapien
-          eget magna ullamcorper faucibus dictum eget odio. Proin dapibus ex id
-          massa vehicula, nec euismod magna consectetur. Sed ultricies varius
-          venenatis. Nulla sapien orci, faucibus ac varius a, mattis ut ante.
+          I am a highly motivated developer who has been working with
+          JavaScript, React, TypeScript, and other relevant technologies for
+          about 1.5 years. I possess a strong understanding of web development
+          and am committed to growth and continuous improvement. I learn daily
+          to deliver higher quality work. I actively seek new challenges and
+          opportunities to expand my skills and knowledge. I am a team player
+          with communication and collaboration skills.
         </p>
       </motion.div>
       <motion.img
@@ -29,9 +30,9 @@ const AboutMe = () => {
         initial='hidden'
         whileInView='show'
         viewport={{ once: true, amount: 0.25 }}
-        src={softwareDeveloperIcon}
+        src={CoderIcon}
         alt='software developer icon '
-        className='max-w-[400px] '
+        className='max-w-[250px] pt-12'
       />
     </div>
   )
