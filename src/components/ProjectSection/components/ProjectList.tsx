@@ -1,9 +1,9 @@
+import { Project } from '@/types.js'
+import { staggerContainer } from '@/utils/motions.js'
 import { easeIn, motion } from 'framer-motion'
-import { projectList } from '../utils/projectData'
-import { Project } from '@/types'
-import TechList from './TechList'
-import ProjectLinks from './ProjectLinks'
-import { staggerContainer } from '../../../utils/motions'
+import { projectList } from '../utils/projectData.js'
+import ProjectLinks from './ProjectLinks.js'
+import TechList from './TechList.js'
 
 const ProjectList = () => {
   return (
@@ -18,7 +18,7 @@ const ProjectList = () => {
         <motion.div
           key={project.title + i}
           variants={staggerContainer()}
-          className='w-[40%] h-[250px] bg-lightgray group/item duration-300  shadow-lg rounded-lg relative z-[500]'
+          className='w-[40%] h-[250px] bg-lightgray group/item duration-300  shadow-lg rounded-lg relative z-100'
         >
           <img
             src={project.desktopImg}

@@ -1,6 +1,7 @@
 import CoderIcon from '@/assets/svg/coder.svg'
-import Divider from '@/components/Divider'
-import { fadeIn } from '@/utils/motions'
+import Divider from '@/components/Divider.js'
+import { fadeIn } from '@/utils/motions.js'
+
 import { motion } from 'framer-motion'
 
 const AboutMe = () => {
@@ -13,7 +14,7 @@ const AboutMe = () => {
         viewport={{ once: true, amount: 0.25 }}
         className='flex flex-col mt-10'
       >
-        <h3 className='text-3xl font-bold uppercase'>Sobre mi</h3>
+        <h3 className='text-3xl font-bold uppercase'>About me</h3>
         <Divider />
         <p className='w-4/5 max-w-[700px] leading-7 break-'>
           I am a highly motivated developer who has been working with

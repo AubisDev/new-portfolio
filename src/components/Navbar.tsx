@@ -1,8 +1,8 @@
 import DarkLogo from '@/assets/images/personal-logo.png'
 import LightLogo from '@/assets/images/light-logo.png'
-import { onClickToSection } from '@/utils/common'
-import ToggleDarkMode from '../../ToggleDarkMode'
 import { useState, useEffect } from 'react'
+import ToggleDarkMode from '@/components/ToggleDarkMode.js'
+import { onClickToSection } from '@/utils/common.js'
 
 const Navbar = (): React.JSX.Element => {
   const [mode, setMode] = useState('light')
@@ -22,8 +22,8 @@ const Navbar = (): React.JSX.Element => {
   }
 
   return (
-    <nav className='container w-full absolute top-0 overflow-hidden z-[500] bg-white/90 border-b-2 border-lightgray/10 dark:bg-appbg/90 dark:border-white/10'>
-      <div className='w-4/5  h-[10vh] flex flex-row items-center m-auto [&>*]:px-8 [&>*]:py-3 justify-between   text-skyblue '>
+    <nav className='w-full fixed top-0 overflow-hidden z-[500] bg-white/90 border-b-2 border-lightgray/10 dark:bg-appbg/90 dark:border-white/10'>
+      <div className='w-4/5  h-[10vh] flex flex-row items-center m-auto  [&>*]:px-6 [&>*]:py-3 justify-between   text-skyblue '>
         <div>
           <img
             src={mode === 'light' ? LightLogo : DarkLogo}
@@ -31,7 +31,7 @@ const Navbar = (): React.JSX.Element => {
             className='h-40 w-52 mt-2'
           />
         </div>
-        <ul className='flex [&>*]:px-7 [&>*]:py-3 mr-6 text-base '>
+        <ul className='flex [&>*]:px-7 [&>*]:py-3 text-base mr-14'>
           <ToggleDarkMode mode={mode} handleClick={handleClick} />
           <li
             onClick={() => onClickToSection('about')}

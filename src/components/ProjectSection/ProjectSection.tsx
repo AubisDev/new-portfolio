@@ -6,12 +6,12 @@ const ProjectSection = () => {
   return (
     <section
       id='projects'
-      className='relative flex flex-col justify-center w-full text-gray-700 bg-white/10 dark:text-white_text'
+      className='relative flex flex-col justify-center w-full text-gray-700 bg-white/10 dark:text-white_text z-100'
     >
       <div className='absolute object-cover w-full h-full'>
         <Circuit />
       </div>
-      <div className='flex flex-row justify-between pb-4 z-[1000] pt-[10rem] w-4/5 m-auto px-20   '>
+      <div className='flex flex-row justify-between pb-4 z-100 pt-[10rem] w-4/5 m-auto px-20   '>
         <h3 className='flex flex-col text-3xl font-bold uppercase'>
           Projects
           <Divider />

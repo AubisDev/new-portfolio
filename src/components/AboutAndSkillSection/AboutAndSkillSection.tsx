@@ -5,7 +5,7 @@ const AboutAndSkillSection = () => {
   return (
     <section
       id='about'
-      className='flex flex-col w-screen h-screen text-gray-700 dark:text-white overflow-hidden bg-gray-100 dark:bg-lightgray z-[500]'
+      className='flex flex-col w-screen h-screen text-gray-700 dark:text-white overflow-hidden bg-gray-100 dark:bg-lightgray z-100'
     >
       <AboutMe />
       <SkillsList />

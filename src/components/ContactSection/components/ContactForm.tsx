@@ -88,6 +88,7 @@ const ContactForm = () => {
           maxLength: 300,
           minLength: 10
         })}
+        placeholder='Contact Details'
         aria-invalid={errors.contactDetails ? 'true' : 'false'}
         className='bg-transparent border-secondary dark:border-skyblue/70 placeholder-gray-600 dark:placeholder-gray-300 border-2 w-4/5 py-2 px-2 text-gray-700 dark:text-white_text rounded-md mb-4 mx-auto focus:outline-none focus:border-secondary dark:focus:border-skyblue min-h-[120px] h-[150px] max-h-[250px]'
       />
