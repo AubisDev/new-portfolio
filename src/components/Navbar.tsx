@@ -8,14 +8,13 @@ const Navbar = (): React.JSX.Element => {
   const [mode, setMode] = useState('light')
 
   useEffect(() => {
-    document.body.classList.add(mode)
     localStorage.setItem('theme', mode)
   }, [mode])
 
-  useEffect(() => {
-    localStorage.setItem('theme', 'light')
-  }, [])
-
+  /**
+   * The handleClick function toggles between light and dark mode by removing the current mode class from
+   * the body and setting the mode state to the opposite value.
+   */
   const handleClick = () => {
     document.body.classList.remove(mode)
     setMode(mode === 'light' ? 'dark' : 'light')
@@ -28,26 +27,26 @@ const Navbar = (): React.JSX.Element => {
           <img
             src={mode === 'light' ? LightLogo : DarkLogo}
             alt='AubisLogo'
-            className='h-40 w-52 mt-2'
+            className='h-40 mt-2 w-52'
           />
         </div>
         <ul className='flex [&>*]:px-7 [&>*]:py-3 text-base mr-14'>
           <ToggleDarkMode mode={mode} handleClick={handleClick} />
           <li
             onClick={() => onClickToSection('about')}
-            className='flex items-center duration-300 rounded-lg cursor-pointer text-gray-700 dark:text-white hover:text-secondary dark:hover:text-light_secondary'
+            className='flex items-center text-gray-700 duration-300 rounded-lg cursor-pointer dark:text-white hover:text-secondary dark:hover:text-light_secondary'
           >
             About
           </li>
           <li
             onClick={() => onClickToSection('projects')}
-            className='flex items-center duration-300 rounded-lg cursor-pointer text-gray-700 dark:text-white hover:text-secondary dark:hover:text-light_secondary'
+            className='flex items-center text-gray-700 duration-300 rounded-lg cursor-pointer dark:text-white hover:text-secondary dark:hover:text-light_secondary'
           >
             Projects
           </li>
           <li
             onClick={() => onClickToSection('contact')}
-            className='flex items-center duration-300 rounded-lg cursor-pointer text-gray-700 dark:text-white hover:text-secondary dark:hover:text-light_secondary'
+            className='flex items-center text-gray-700 duration-300 rounded-lg cursor-pointer dark:text-white hover:text-secondary dark:hover:text-light_secondary'
           >
             Contact
           </li>

@@ -8,6 +8,10 @@ import { IFormInput } from '@/types.js'
 
 const ContactForm = () => {
   const form = useRef<any>()
+  /* Using the `useForm` hook from the `react-hook-form` library to register form inputs, handle form
+  submission, reset the form, and manage form state including any validation errors. It is also
+  specifying the type of form input data expected (`IFormInput`). The destructuring syntax is used
+  to extract these functions and properties from the returned object. */
   const {
     register,
     handleSubmit,
@@ -15,12 +19,18 @@ const ContactForm = () => {
     formState: { errors }
   } = useForm<IFormInput>()
 
+  /**
+   * This function sends an email using emailjs and displays a success or error message using toast.
+   */
   const sendEmail = () => {
     emailjs
       .sendForm(
+        // @ts-ignore
         import.meta.env.VITE_EMAILJS_SERVICE,
+        // @ts-ignore
         import.meta.env.VITE_EMAILJS_TEMPLATE,
         form.current,
+        // @ts-ignore
         import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       )
       .then(

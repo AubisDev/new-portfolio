@@ -36,12 +36,12 @@ const SkillsList = () => {
           clickable: true
         }}
         modules={[FreeMode, Autoplay, Navigation]}
-        className='w-[87%] mySwiper relative '
+        className='w-[87%] mySwiper relative max-w-[1000px] '
       >
         {skillData.map((skill) => (
           <SwiperSlide
             key={skill.skillName}
-            className='px-4 bg-gradient-to-r from-secondary/30 to-secondary/30 hover:from-sky-400/60 hover:to-blue-500/60 dark:from-sky-400/10 dark:to-blue-500/10 dark:hover:from-sky-400/30 dark:hover:to-blue-500/30 duration-300 h-[200px] border-opacity-[0.05] shadow-yellow rounded-lg relative'
+            className='px-4 bg-gradient-to-r max-w-[160px] from-secondary/30 to-secondary/30 hover:from-sky-400/60 hover:to-blue-500/60 dark:from-sky-400/10 dark:to-blue-500/10 dark:hover:from-sky-400/30 dark:hover:to-blue-500/30 duration-300 h-[200px] border-opacity-[0.05] shadow-yellow rounded-lg relative'
           >
             <div className='flex flex-col items-center justify-center h-full z-100'>
               <img
