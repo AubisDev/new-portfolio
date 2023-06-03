@@ -8,9 +8,9 @@ const DownloadIcon = () => {
         viewBox='0 0 24 24'
         fill='currentColor'
         stroke='currentColor'
-        stroke-width='2'
-        stroke-linecap='round'
-        stroke-linejoin='round'
+        strokeWidth='2'
+        strokeLinecap='round'
+        strokeLinejoin='round'
         className='ai ai-Download'
       >
         <path d='M12 15V3m0 12l-4-4m4 4l4-4' />
