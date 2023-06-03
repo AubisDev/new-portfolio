@@ -14,7 +14,7 @@ const Background = (): React.JSX.Element => {
         stroke='currentColor'
         fill='none'
         stroke-linecap='butt'
-        className='stroke-secondary dark:stroke-[rgba(123,250,246)]'
+        className='stroke-secondary dark:stroke-[rgba(123,250,246)] '
         initial={{ pathLength: 0.5 }}
         animate={{
           pathLength: 1,

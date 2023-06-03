@@ -8,7 +8,7 @@ import ProjectSection from './components/ProjectSection/ProjectSection'
 export const App = (): React.JSX.Element => {
   return (
     <main className='relative flex flex-col items-center w-screen h-auto bg-white dark:bg-appbg scroll-smooth '>
-      <div className='absolute w-full h-full '>
+      <div className='absolute w-full h-full z-[1]'>
         <Background />
       </div>
       <Navbar />

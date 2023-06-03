@@ -8,7 +8,7 @@ const ContactSection = () => {
   return (
     <section
       id='contact'
-      className='w-full h-screen m-auto h-min-screen bg-gray-200 dark:bg-lightgray -mt-[7rem] flex items-center justify-center flex-row z-100'
+      className='w-full h-screen m-auto h-min-screen bg-gray-200 dark:bg-lightgray -mt-[7rem] flex items-center justify-center flex-row z-[100]'
     >
       <motion.div
         variants={slideIn('left', 'spring', 0.3, 1)}
