@@ -1,22 +1,22 @@
 import AboutAndSkillSection from './components/AboutAndSkillSection/AboutAndSkillSection'
+import Background from './components/Background'
 import ContactSection from './components/ContactSection/ContactSection'
 import HeroSection from './components/HeroSection/HeroSection'
-import { Circuit } from './components/HeroSection/components'
 import Navbar from './components/HeroSection/components/Navbar'
 import ProjectSection from './components/ProjectSection/ProjectSection'
 
 export const App = (): React.JSX.Element => {
   return (
-    <div className='relative flex flex-col items-center w-screen h-auto overflow-hidden bg-white dark:bg-appbg scroll-smooth '>
+    <main className='relative flex flex-col items-center w-screen h-auto overflow-hidden bg-white dark:bg-appbg scroll-smooth '>
       <div className='absolute w-full h-full '>
-        <Circuit />
+        <Background />
       </div>
       <Navbar />
       <HeroSection />
       <AboutAndSkillSection />
       <ProjectSection />
       <ContactSection />
-    </div>
+    </main>
   )
 }
 

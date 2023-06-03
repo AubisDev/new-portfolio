@@ -1,24 +1,12 @@
-import { useState, useEffect } from 'react'
 import lightModeIcon from '@/assets/svg/lightmode.svg'
 import darkModeIcon from '@/assets/svg/darkmode.svg'
 
-const ToggleDarkMode = () => {
-  const [mode, setMode] = useState('light')
+interface DarkModeProps {
+  handleClick: () => void
+  mode: string
+}
 
-  useEffect(() => {
-    document.body.classList.add(mode)
-    localStorage.setItem('theme', mode)
-  }, [mode])
-
-  useEffect(() => {
-    localStorage.setItem('theme', 'light')
-  }, [])
-
-  const handleClick = () => {
-    document.body.classList.remove(mode)
-    setMode(mode === 'light' ? 'dark' : 'light')
-  }
-
+const ToggleDarkMode = ({ handleClick, mode }: DarkModeProps) => {
   return (
     <div className='relative flex flex-row'>
       <label className='relative inline-flex items-center cursor-pointer'>

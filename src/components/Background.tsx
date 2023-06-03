@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 
-const Circuit = (): React.JSX.Element => {
+const Background = (): React.JSX.Element => {
   return (
     <motion.svg
       xmlns='http://www.w3.org/2000/svg'
@@ -430,4 +430,4 @@ const Circuit = (): React.JSX.Element => {
     </motion.svg>
   )
 }
-export default Circuit
+export default Background

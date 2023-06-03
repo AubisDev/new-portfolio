@@ -12,3 +12,9 @@ type Project = {
   repositoryLink: string
   liveDemoLink: string
 }
+
+export interface IFormInput {
+  remitter: string
+  contactPurpose: string
+  contactDetails: string
+}

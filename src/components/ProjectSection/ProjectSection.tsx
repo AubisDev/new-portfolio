@@ -1,4 +1,4 @@
-import Circuit from '../Circuit'
+import Circuit from '../Background'
 import Divider from '../Divider'
 import ProjectList from './components/ProjectList'
 
@@ -11,7 +11,7 @@ const ProjectSection = () => {
       <div className='absolute object-cover w-full h-full'>
         <Circuit />
       </div>
-      <div className='flex flex-row justify-between pb-4 mx-20 z-[1000] pt-[10rem] '>
+      <div className='flex flex-row justify-between pb-4 z-[1000] pt-[10rem] w-4/5 m-auto px-20   '>
         <h3 className='flex flex-col text-3xl font-bold uppercase'>
           Projects
           <Divider />

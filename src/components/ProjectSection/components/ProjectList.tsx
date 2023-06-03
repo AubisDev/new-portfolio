@@ -4,7 +4,6 @@ import { Project } from '@/types'
 import TechList from './TechList'
 import ProjectLinks from './ProjectLinks'
 import { staggerContainer } from '../../../utils/motions'
-import projectbg from '@/assets/svg/projectbg.svg'
 
 const ProjectList = () => {
   return (
@@ -15,11 +14,6 @@ const ProjectList = () => {
       viewport={{ once: true, amount: 0.25 }}
       className='relative flex flex-wrap justify-center w-4/5 m-auto gap-x-6 gap-y-5 pb-[10rem]'
     >
-      {/* <img
-        src={projectbg}
-        alt='bgpattern'
-        className='absolute object-cover w-full h-full opacity-50 z-1'
-      /> */}
       {projectList.map((project: Project, i) => (
         <motion.div
           key={project.title + i}
