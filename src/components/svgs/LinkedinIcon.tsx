@@ -1,13 +1,14 @@
 const LinkedinIcon = () => {
   return (
-    <div className='flex flex-row p-2 duration-300 rounded-lg cursor-pointer logo-wrapper hover:bg-white/10 text-appbg fill-appbg '>
+    <div className='flex flex-row items-center p-2 duration-300 rounded-lg cursor-pointer logo-wrapper dark:hover:bg-white/10 hover:bg-black/5 hover:text-secondary text-gray-700 dark:text-white '>
       <svg
         xmlns='http://www.w3.org/2000/svg'
         width='24'
         height='24'
         viewBox='0 0 24 24'
         fill='currentColor'
-        stroke-width='2'
+        stroke='currentColor'
+        stroke-width='0.01'
         className='ai ai-LinkedinFill'
       >
         <path

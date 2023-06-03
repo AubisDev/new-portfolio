@@ -14,7 +14,7 @@ export const Picture = (): React.JSX.Element => {
         transition={{ duration: 3 }}
         src='https://i.ibb.co/kcMD6hC/photo-2022-07-21-19-04-40.jpg'
         alt=''
-        className='object-cover w-[700px] h[500px] rounded-full aspect-square'
+        className='object-cover w-[700px] h[500px] rounded-full aspect-square shadow-lg'
       />
     </motion.div>
   )

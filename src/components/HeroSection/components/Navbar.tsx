@@ -5,8 +5,8 @@ import ToggleDarkMode from '../../ToggleDarkMode'
 
 const Navbar = (): React.JSX.Element => {
   return (
-    <nav className='container w-4/5 absolute top-0 overflow-hidden z-[500] '>
-      <div className=' h-[10vh] flex flex-row items-center m-auto [&>*]:px-8 [&>*]:py-3 justify-between   text-skyblue '>
+    <nav className='container w-full absolute top-0 overflow-hidden z-[500] bg-white/90 border-b-2 border-lightgray/10 dark:bg-appbg/90 dark:border-white/10'>
+      <div className='w-4/5  h-[10vh] flex flex-row items-center m-auto [&>*]:px-8 [&>*]:py-3 justify-between   text-skyblue '>
         <div>
           <img src={LightLogo} alt='AubisLogo' className='h-40 w-52' />
         </div>
@@ -14,19 +14,19 @@ const Navbar = (): React.JSX.Element => {
           <ToggleDarkMode />
           <li
             onClick={() => onClickToSection('about')}
-            className='flex items-center duration-300 rounded-lg cursor-pointer text-secondary dark:text-white hover:text-light_secondary dark:hover:bg-skyblue dark:hover:text-appbg'
+            className='flex items-center duration-300 rounded-lg cursor-pointer text-secondary dark:text-white hover:text-light_secondary dark:hover:text-light_secondary'
           >
             About
           </li>
           <li
             onClick={() => onClickToSection('projects')}
-            className='flex items-center duration-300 rounded-lg cursor-pointer text-secondary dark:text-white hover:text-light_secondary dark:hover:bg-skyblue dark:hover:text-appbg'
+            className='flex items-center duration-300 rounded-lg cursor-pointer text-secondary dark:text-white hover:text-light_secondary dark:hover:text-light_secondary'
           >
             Projects
           </li>
           <li
             onClick={() => onClickToSection('contact')}
-            className='flex items-center duration-300 rounded-lg cursor-pointer text-secondary dark:text-white hover:text-light_secondary dark:hover:bg-skyblue dark:hover:text-appbg'
+            className='flex items-center duration-300 rounded-lg cursor-pointer text-secondary dark:text-white hover:text-light_secondary dark:hover:text-light_secondary'
           >
             Contact
           </li>
