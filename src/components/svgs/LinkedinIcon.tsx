@@ -1,6 +1,6 @@
 const LinkedinIcon = () => {
   return (
-    <div className='flex flex-row items-center p-2 duration-300 rounded-lg cursor-pointer logo-wrapper dark:hover:bg-white/10 hover:bg-black/5 hover:text-secondary text-gray-700 dark:text-white '>
+    <div className=''>
       <svg
         xmlns='http://www.w3.org/2000/svg'
         width='24'

@@ -7,10 +7,10 @@ const LINKEDIN_LINK = 'https://www.linkedin.com/in/aubis-sanchez-torres/'
 
 const Personalanks = () => {
   const linkStyle =
-    'flex items-center text-gray-700 dark:text-white logo-wrapper '
+    'flex items-center text-gray-700 dark:text-white logo-wrapper dark:hover:bg-white/10 hover:bg-black/5 hover:text-secondary text-gray-700 dark:text-white p-2 rounded-lg '
   return (
-    <footer className='pt-4'>
-      <ul className='flex flex-row justify-center lg:justify-normal py-2 [&>*]:flex [&>*]:text-sm [&>button]:text-base font-semibold '>
+    <footer className='pt-12 lg:pt-4 '>
+      <ul className='flex flex-row justify-center lg:justify-normal [&>*]:flex [&>*]:text-sm [&>button]:text-base font-semibold '>
         <a href='' className={linkStyle}>
           <DownloadIcon />
         </a>

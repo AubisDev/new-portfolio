@@ -45,9 +45,9 @@ const SkillsList = () => {
         {skillData.map((skill) => (
           <SwiperSlide
             key={skill.skillName}
-            className='px-4 bg-gradient-to-r min-w-[150px] max-w-[160px] from-secondary/30 to-secondary/30 hover:from-sky-400/60 hover:to-blue-500/60 dark:from-sky-400/10 dark:to-blue-500/10 dark:hover:from-sky-400/30 dark:hover:to-blue-500/30 duration-300 h-[150px] sm:h-[200px] border-opacity-[0.05] shadow-yellow rounded-lg relative'
+            className='px-4 bg-gradient-to-r min-w-[150px] max-w-[160px] from-gray-700/30 to-black/30 hover:from-sky-400/20 hover:to-blue-500/40 dark:from-sky-400/10 dark:to-blue-500/10 dark:hover:from-sky-400/30 dark:hover:to-blue-500/30 duration-300 h-[150px] sm:h-[200px] border-opacity-[0.05] shadow-yellow rounded-lg relative'
           >
-            <div className='flex flex-col items-center justify-center h-full z-100'>
+            <div className='flex flex-col items-center justify-center h-full z-[100]'>
               <img
                 src={skill.icon}
                 alt={skill.skillName}
@@ -55,7 +55,7 @@ const SkillsList = () => {
                   skill.skillName === 'Zustand' ? 'w-32' : 'w-12 sm:w-20'
                 } h-12 sm:h-20 `}
               />
-              <p className='pt-2 font-bold text-gray-700 dark:text-gray-200 '>
+              <p className='pt-2 font-bold text-gray-800 dark:text-gray-200 '>
                 {skill.skillName}
               </p>
             </div>

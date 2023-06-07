@@ -12,43 +12,33 @@ const ProjectList = () => {
       initial='hidden'
       whileInView='show'
       viewport={{ once: true, amount: 0.25 }}
-      className='relative flex flex-wrap justify-center w-full lg:w-4/5 m-auto gap-x-6 gap-y-5 pb-[10rem]'
+      className='relative flex flex-wrap justify-center w-full lg:w-4/5 m-auto gap-x-6 gap-y-5 pb-[10rem] rounded-lg '
     >
       {projectList.map((project: Project, i) => (
         <motion.div
           key={project.title + i}
           variants={staggerContainer()}
-          className='w-4/5 sm:w-[40%] h-[200px] sm:h-[150px] lg:h-[250px] bg-lightgray group/item duration-300  shadow-lg rounded-lg relative z-[100]'
+          className='w-4/5 sm:w-[40%] h-[200px] sm:h-[150px] lg:h-[250px] bg-gray-200 dark:bg-lightgray group/item duration-300 shadow-lg relative z-[100] '
         >
-          <img
-            src={project.desktopImg}
-            className='absolute z-0 object-cover w-full h-full rounded-lg'
-            alt={project.title}
-          />
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileHover={{ opacity: 1 }}
-            transition={{ duration: 0.4, ease: easeIn, type: 'spring' }}
-            className='invisible flex-col group-hover/item:visible group/info absolute flex items-center justify-center lg:justify-between p-4 text-white lg:text-gray-900 rounded-lg bg-gray-800/90 dark:bg-black/90 h-full w-full z-[500]'
-          >
-            <ProjectTitle title={project.title} />
-            <TechList techs={project.techs} />
+          <div className='h-[85%] w-full'>
+            <img
+              src={project.desktopImg}
+              className='w-full h-full rounded-t-lg'
+              alt={project.title}
+            />
+          </div>
+          <div className='w-full flex items-center flex-row h-[15%] border-b border-l border-r border-gray-300  bg-gray-300 dark:border-white/10 dark:bg-gray-700  px-4'>
+            <p className='w-3/5 text-xs font-bold text-gray-800 capitalize dark:text-white lg:text-base '>
+              {project.title}
+            </p>
             <ProjectLinks
               repositoryLink={project.repositoryLink}
               liveDemoLink={project.liveDemoLink}
             />
-          </motion.div>
+          </div>
         </motion.div>
       ))}
     </motion.div>
   )
 }
 export default ProjectList
-
-const ProjectTitle = ({ title }: { title: string }) => {
-  return (
-    <p className='mb-4 text-base font-bold text-center capitalize sm:mb-2 sm:text-base lg:text-3xl text-skyblue lg:mb-0'>
-      {title}
-    </p>
-  )
-}

@@ -12,7 +12,7 @@ const ProjectSection = () => {
         <Circuit />
       </div>
       <div className='flex flex-row justify-between pb-4 z-100 pt-[10rem] w-4/5 m-auto px-20   '>
-        <h3 className='flex flex-col text-3xl font-bold uppercase'>
+        <h3 className='flex flex-col w-full text-3xl font-bold text-center uppercase lg:text-left'>
           Projects
           <Divider />
         </h3>

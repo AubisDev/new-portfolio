@@ -1,6 +1,6 @@
-import LinkOutIcon from '@/assets/svg/link-out-icon.svg'
-import GithubIcon from '@/assets/svg/github-icon.svg'
-import PlayIcon from '@/assets/svg/play-icon.svg'
+import GithubIcon from '@/components/svgs/GithubIcon'
+import LinkOutIcon from '@/components/svgs/LinkOutIcon'
+import PlayIcon from '@/components/svgs/PlayIcon'
 
 interface ProjectLinksProps {
   liveDemoLink: string
@@ -9,34 +9,23 @@ interface ProjectLinksProps {
 
 const ProjectLinks = ({ liveDemoLink, repositoryLink }: ProjectLinksProps) => {
   return (
-    <div className='flex flex-col items-center justify-center w-full text-xs lg:flex-row lg:text-sm lg:justify-evenly gap-x-2'>
+    <div className='flex flex-row items-center justify-center w-2/5 text-xs lg:text-sm '>
       <a
         href={liveDemoLink}
         target='_blank'
-        className='flex flex-row items-center px-3 mt-1 font-semibold duration-300 ease-in bg-blue-400 border-white rounded-md lg:py-1 hover:bg-blue-500 '
+        className='flex flex-row items-center px-2 font-semibold text-gray-700 duration-300 ease-in border-white rounded-md stroke-white lg:py-1 hover:bg-gray-400 fill-white dark:text-white'
       >
-        Live demo
-        <img
-          src={LinkOutIcon}
-          alt='new tab icon'
-          className='w-6 h-6 pl-2 mt-1'
-        />
+        <LinkOutIcon />
       </a>
       <a
-        className='flex flex-row items-center px-3 mt-1 font-semibold duration-300 bg-green-400 border-white rounded-md lg:py-1 hover:bg-green-500'
+        className='flex flex-row items-center p-2 font-semibold text-gray-700 duration-300 border-white rounded-md stroke-white lg:mx-2 lg:py-1 hover:bg-gray-400 fill-white dark:text-white'
         target='_blank'
         href={repositoryLink}
       >
-        Repository
-        <img
-          src={GithubIcon}
-          alt='new tab icon'
-          className='w-6 h-6 pl-2 mt-1'
-        />
+        <GithubIcon />
       </a>
-      <button className='flex flex-row items-center px-3 mt-1 font-semibold duration-300 bg-yellow-300 border-white rounded-md lg:py-1 hover:bg-yellow-500'>
-        Preview
-        <img src={PlayIcon} alt='new tab icon' className='w-6 h-6 pl-2 mt-1' />
+      <button className='flex flex-row items-center p-2 font-semibold text-gray-700 duration-300 border-white rounded-md stroke-white lg:py-1 hover:bg-gray-400 fill-white dark:text-white'>
+        <PlayIcon />
       </button>
     </div>
   )

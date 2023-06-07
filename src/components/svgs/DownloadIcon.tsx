@@ -1,6 +1,6 @@
 const DownloadIcon = () => {
   return (
-    <div className='flex flex-row items-center p-2 duration-300 rounded-lg cursor-pointer logo-wrapper  hover:text-secondary dark:hover:bg-white/10 hover:bg-black/5 dark:hover:text-white '>
+    <div className='flex flex-row items-center '>
       <svg
         xmlns='http://www.w3.org/2000/svg'
         width='24'
