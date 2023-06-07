@@ -18,7 +18,7 @@ const ProjectList = () => {
         <motion.div
           key={project.title + i}
           variants={staggerContainer()}
-          className='w-[40%] h-[250px] bg-lightgray group/item duration-300  shadow-lg rounded-lg relative z-100'
+          className='w-[40%] h-[250px] bg-lightgray group/item duration-300  shadow-lg rounded-lg relative z-[100]'
         >
           <img
             src={project.desktopImg}
@@ -29,7 +29,7 @@ const ProjectList = () => {
             initial={{ opacity: 0 }}
             whileHover={{ opacity: 1 }}
             transition={{ duration: 0.4, ease: easeIn, type: 'spring' }}
-            className='invisible flex-col group-hover/item:visible group/info absolute flex items-center justify-between p-4 text-gray-900 rounded-lg bg-gray-800/90 dark:bg-black/90 h-full w-full z-[200]'
+            className='invisible flex-col group-hover/item:visible group/info absolute flex items-center justify-between p-4 text-gray-900 rounded-lg bg-gray-800/90 dark:bg-black/90 h-full w-full z-[500]'
           >
             <ProjectTitle title={project.title} />
             <TechList techs={project.techs} />

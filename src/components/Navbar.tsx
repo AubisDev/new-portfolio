@@ -8,8 +8,13 @@ const Navbar = (): React.JSX.Element => {
   const [mode, setMode] = useState('light')
 
   useEffect(() => {
+    document.body.classList.add(mode)
     localStorage.setItem('theme', mode)
   }, [mode])
+
+  useEffect(() => {
+    localStorage.setItem('theme', 'light')
+  }, [])
 
   /**
    * The handleClick function toggles between light and dark mode by removing the current mode class from

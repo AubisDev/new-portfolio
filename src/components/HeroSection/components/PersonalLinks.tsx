@@ -10,7 +10,7 @@ const Personalanks = () => {
     'flex items-center text-gray-700 dark:text-white logo-wrapper '
   return (
     <footer className='pt-4'>
-      <ul className='flex flex-row py-2 [&>*]:flex [&>*]:text-sm [&>button]:text-base font-semibold '>
+      <ul className='flex flex-row justify-center lg:justify-normal py-2 [&>*]:flex [&>*]:text-sm [&>button]:text-base font-semibold '>
         <a href='' className={linkStyle}>
           <DownloadIcon />
         </a>

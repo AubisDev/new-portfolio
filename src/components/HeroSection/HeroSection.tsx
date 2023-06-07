@@ -3,8 +3,8 @@ import Title from './components/Title.js'
 
 const HeroSection = (): React.JSX.Element => {
   return (
-    <section className='flex flex-col w-4/5 h-screen m-auto z-100'>
-      <div className='z-50 flex flex-row items-center h-full px-20 justify-evenly'>
+    <section className='flex flex-col w-screen h-screen m-auto sm:w-4/5 z-100'>
+      <div className='z-50 flex flex-col-reverse items-center justify-center w-full h-full px-20 lg:flex-row lg:justify-evenly'>
         <Title />
         <Picture />
       </div>
