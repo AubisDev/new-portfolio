@@ -6,24 +6,25 @@ import { motion } from 'framer-motion'
 
 const AboutMe = () => {
   return (
-    <div className='relative flex flex-row items-center justify-between w-4/5 px-20 pb-20 m-auto '>
+    <div className='relative flex flex-col items-center justify-between w-full px-12 pb-20 m-auto sm:px-20 sm:w-4/5 lg:flex-row '>
       <motion.div
         variants={fadeIn('right', '', 0.5, 1)}
         initial='hidden'
         whileInView='show'
         viewport={{ once: true, amount: 0.25 }}
-        className='flex flex-col mt-10'
+        className='flex flex-col w-full mt-10'
       >
-        <h3 className='text-3xl font-bold uppercase'>About me</h3>
+        <h3 className='w-full text-3xl font-bold text-center uppercase lg:text-left '>
+          About me
+        </h3>
         <Divider />
-        <p className='w-4/5 max-w-[700px] leading-7 break-'>
-          I am a highly motivated developer who has been working with
-          JavaScript, React, TypeScript, and other relevant technologies for
-          about 1.5 years. I possess a strong understanding of web development
-          and am committed to growth and continuous improvement. I learn daily
-          to deliver higher quality work. I actively seek new challenges and
-          opportunities to expand my skills and knowledge. I am a team player
-          with communication and collaboration skills.
+        <p className='w-full lg:w-4/5 max-w-[700px tracking-wide  lg:tracking-normal sm:text-left text-center sm:text-sm'>
+          I am a motivated developer who has been working with JavaScript,
+          React, TypeScript, and other relevant technologies for about 1.5
+          years. I possess a strong understanding of web development and am
+          committed to growth and continuous improvement. I learn daily to
+          deliver higher quality work. I actively seek new challenges and
+          opportunities to improve my skills and knowledge.
         </p>
       </motion.div>
       <motion.img
@@ -33,7 +34,7 @@ const AboutMe = () => {
         viewport={{ once: true, amount: 0.25 }}
         src={CoderIcon}
         alt='software developer icon '
-        className='max-w-[250px] pt-12'
+        className='max-w-[250px] min-w-[100px] pt-12'
       />
     </div>
   )

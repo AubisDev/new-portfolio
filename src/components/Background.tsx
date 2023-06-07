@@ -7,14 +7,14 @@ const Background = (): React.JSX.Element => {
       version='1.1'
       xmlnsXlink='http://www.w3.org/1999/xlink'
       viewBox='0 0 1422 800'
-      className='w-full h-full '
+      className='w-full h-full'
     >
       <motion.g
         stroke-width='2'
         stroke='currentColor'
         fill='none'
         stroke-linecap='butt'
-        className='stroke-secondary dark:stroke-[rgba(123,250,246.0.8)] '
+        className='stroke-secondary dark:stroke-[rgba(123,250,246.0.8)]  '
         initial={{ pathLength: 0.5 }}
         animate={{
           pathLength: 1,

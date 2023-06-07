@@ -1,6 +1,6 @@
 const TechList = ({ techs }: { techs: string[] }) => {
   return (
-    <div className='flex flex-wrap items-center justify-center w-4/5 h-auto text-sm text-white '>
+    <div className='flex-wrap items-center justify-center hidden w-4/5 h-auto text-sm text-white lg:flex '>
       {techs.map((tech) => (
         <span
           key={tech}

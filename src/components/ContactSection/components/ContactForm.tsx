@@ -54,7 +54,7 @@ const ContactForm = () => {
       initial='hidden'
       whileInView='show'
       viewport={{ once: true, amount: 0.25 }}
-      className='flex flex-col items-center w-1/3 mt-5 h-1/2 justify-evenly rounded- '
+      className='flex flex-col items-center w-4/5 mt-5 sm:w-1/2 lg:w-1/3 h-1/2 justify-evenly rounded- '
     >
       <input
         {...register('remitter', {
@@ -64,7 +64,7 @@ const ContactForm = () => {
         })}
         aria-invalid={errors.remitter ? 'true' : 'false'}
         placeholder='Remitter name'
-        className='w-4/5 px-2 py-2 mx-auto mb-4 text-gray-700 placeholder-gray-600 bg-transparent border-2 rounded-md dark:placeholder-gray-300 border-secondary dark:border-skyblue/70 dark:text-white_text focus:outline-none focus:border-secondary dark:focus:border-skyblue'
+        className='w-full px-2 py-2 mx-auto mb-4 text-gray-700 placeholder-gray-600 bg-transparent border-2 rounded-md lg:w-4/5 dark:placeholder-gray-300 border-secondary dark:border-skyblue/70 dark:text-white_text focus:outline-none focus:border-secondary dark:focus:border-skyblue'
       />
       {errors.remitter?.type === 'required' && (
         <p role='alert'>Remitter name is required</p>
@@ -82,7 +82,7 @@ const ContactForm = () => {
         })}
         aria-invalid={errors.contactPurpose ? 'true' : 'false'}
         placeholder='Contact purpose'
-        className='w-4/5 px-2 py-2 mx-auto mb-4 text-gray-700 placeholder-gray-600 bg-transparent border-2 rounded-md dark:placeholder-gray-300 border-secondary dark:border-skyblue/70 dark:text-white_text focus:outline-none focus:border-secondary dark:focus:border-skyblue'
+        className='w-full px-2 py-2 mx-auto mb-4 text-gray-700 placeholder-gray-600 bg-transparent border-2 rounded-md lg:w-4/5 dark:placeholder-gray-300 border-secondary dark:border-skyblue/70 dark:text-white_text focus:outline-none focus:border-secondary dark:focus:border-skyblue'
       />
       {errors.contactPurpose?.type === 'required' && (
         <p role='alert'>Remitter name is required</p>
@@ -100,7 +100,7 @@ const ContactForm = () => {
         })}
         placeholder='Contact Details'
         aria-invalid={errors.contactDetails ? 'true' : 'false'}
-        className='bg-transparent border-secondary dark:border-skyblue/70 placeholder-gray-600 dark:placeholder-gray-300 border-2 w-4/5 py-2 px-2 text-gray-700 dark:text-white_text rounded-md mb-4 mx-auto focus:outline-none focus:border-secondary dark:focus:border-skyblue min-h-[120px] h-[150px] max-h-[250px]'
+        className='bg-transparent border-secondary dark:border-skyblue/70 placeholder-gray-600 dark:placeholder-gray-300 border-2 w-full lg:w-4/5 py-2 px-2 text-gray-700 dark:text-white_text rounded-md mb-4 mx-auto focus:outline-none focus:border-secondary dark:focus:border-skyblue min-h-[120px] h-[150px] max-h-[250px]'
       />
       {errors.contactDetails?.type === 'required' && (
         <p role='alert'>Remitter name is required</p>
