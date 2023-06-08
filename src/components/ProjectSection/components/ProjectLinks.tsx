@@ -1,4 +1,5 @@
 import { GithubIcon, LinkOutIcon, PlayIcon } from '@/components/svgs'
+import { Toaster, toast } from 'sonner'
 
 interface ProjectLinksProps {
   liveDemoLink: string
@@ -22,9 +23,13 @@ const ProjectLinks = ({ liveDemoLink, repositoryLink }: ProjectLinksProps) => {
       >
         <GithubIcon />
       </a>
-      <button className='flex flex-row items-center p-2 font-semibold text-gray-700 duration-300 border-white rounded-md stroke-white lg:py-1 hover:bg-gray-400 fill-white dark:text-white'>
+      <button
+        onClick={() => toast("Sorry, isn't implemented yet")}
+        className='flex flex-row items-center p-2 font-semibold text-gray-700 duration-300 border-white rounded-md stroke-white lg:py-1 hover:bg-gray-400 fill-white dark:text-white'
+      >
         <PlayIcon />
       </button>
+      <Toaster />
     </div>
   )
 }

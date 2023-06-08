@@ -1,4 +1,5 @@
 import { DownloadIcon, GithubIcon, LinkedinIcon } from '@/components/svgs'
+import { Toaster, toast } from 'sonner'
 
 const GITHUB_LINK = 'https://github.com/AubisDev'
 const LINKEDIN_LINK = 'https://www.linkedin.com/in/aubis-sanchez-torres/'
@@ -9,7 +10,11 @@ const Personalanks = () => {
   return (
     <footer className='pt-12 lg:pt-4 '>
       <ul className='flex flex-row justify-center lg:justify-normal [&>*]:flex [&>*]:text-sm [&>button]:text-base font-semibold '>
-        <a href='' className={linkStyle}>
+        <a
+          href=''
+          className={linkStyle}
+          onClick={() => toast('Working on my resume, available soon')}
+        >
           <DownloadIcon />
         </a>
         <a href={LINKEDIN_LINK} target='_blank' className={`${linkStyle} mx-2`}>
@@ -19,6 +24,7 @@ const Personalanks = () => {
           <GithubIcon />
         </a>
       </ul>
+      <Toaster />
     </footer>
   )
 }
