@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { slideIn } from '@/utils/motions'
+import { fadeIn } from '@/utils/motions'
 import { ContactForm } from './components'
 import Divider from '../Divider'
 import ContactIlustration from '@/assets/svg/sending-emails.svg'
@@ -12,7 +12,7 @@ const ContactSection = () => {
       className='w-full h-screen m-auto h-min-screen bg-gray-200 dark:bg-lightgray -mt-[7rem] flex flex-col lg:flex-row items-center justify-center z-[100]'
     >
       <motion.div
-        variants={slideIn({
+        variants={fadeIn({
           direction: Direction.left,
           type: 'spring',
           delay: 0.3,
