@@ -76,7 +76,7 @@ const Navbar = (): React.JSX.Element => {
                 onClick={() => handleMoveToSection('about')}
                 className='cursor-pointer hover:bg-slate-400'
               >
-                About``
+                About
               </li>
               <li
                 onClick={() => handleMoveToSection('projects')}
