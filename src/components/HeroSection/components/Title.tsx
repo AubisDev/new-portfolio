@@ -26,8 +26,8 @@ const Title = (): React.JSX.Element => {
         </h3>
         <p className=' w-full sm:w-4/5 text-xs sm:text-sm lg:text-lg text-gray-600 dark:text-white z-[500] text-center md:text-left m-auto lg:m-0'>
           Technology enthusiast and web developer. Eager to work for creating or
-          maintaining projects. Focused on modern, clean and attrative webs
-          pages for any device{' '}
+          maintaining projects. Focused on modern, clean and attrative web pages
+          for any device{' '}
           <button
             className='text-center text-gray-700 duration-300 sm:text-left dark:text-gray-300 hover:text-dark_orange dark:hover:text-skyblue'
             onClick={() => onClickToSection('contact')}
