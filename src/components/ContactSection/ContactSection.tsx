@@ -3,6 +3,7 @@ import { slideIn } from '@/utils/motions'
 import { ContactForm } from './components'
 import Divider from '../Divider'
 import ContactIlustration from '@/assets/svg/sending-emails.svg'
+import { Direction } from '@/types.d'
 
 const ContactSection = () => {
   return (
@@ -11,7 +12,12 @@ const ContactSection = () => {
       className='w-full h-screen m-auto h-min-screen bg-gray-200 dark:bg-lightgray -mt-[7rem] flex flex-col lg:flex-row items-center justify-center z-[100]'
     >
       <motion.div
-        variants={slideIn('left', 'spring', 0.3, 1)}
+        variants={slideIn({
+          direction: Direction.left,
+          type: 'spring',
+          delay: 0.3,
+          duration: 1
+        })}
         initial='hidden'
         whileInView='show'
         viewport={{ once: true, amount: 0.25 }}

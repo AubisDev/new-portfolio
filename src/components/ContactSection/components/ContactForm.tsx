@@ -50,7 +50,7 @@ const ContactForm = () => {
     <motion.form
       ref={form}
       onSubmit={handleSubmit(sendEmail)}
-      variants={zoomIn(0.5, 1)}
+      variants={zoomIn({ delay: 0.5, duration: 1 })}
       initial='hidden'
       whileInView='show'
       viewport={{ once: true, amount: 0.25 }}

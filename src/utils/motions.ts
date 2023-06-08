@@ -1,4 +1,4 @@
-import { EffectOptions, Direction } from '@/types'
+import { EffectOptions, Direction } from '@/types.d'
 
 export const textVariant = (
   options: Omit<EffectOptions, 'direction' | 'type' | 'duration'>

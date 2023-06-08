@@ -3,7 +3,7 @@ export type ISkill = {
   icon: string
 }
 
-type Project = {
+export type Project = {
   title: string
   desktopImg: string
   mobileImg: string
@@ -19,14 +19,14 @@ export interface IFormInput {
   contactDetails: string
 }
 
-enum Direction {
+export enum Direction {
   'left',
   'right',
   'up',
   'down'
 }
 
-type EffectOptions = {
+export type EffectOptions = {
   direction: Direction
   type: string
   delay: number

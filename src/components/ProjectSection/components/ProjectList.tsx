@@ -1,4 +1,4 @@
-import { Project } from '@/types.js'
+import { Project } from '@/types.d'
 import { staggerContainer } from '@/utils'
 import { motion } from 'framer-motion'
 import { projectList } from '../utils'

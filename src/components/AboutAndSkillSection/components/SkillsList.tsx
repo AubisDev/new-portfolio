@@ -4,19 +4,23 @@ import { FreeMode, Autoplay, Navigation } from 'swiper'
 import { motion } from 'framer-motion'
 import { fadeIn } from '@/utils/motions'
 import { useMediaQuery } from 'react-responsive'
-
+import { Divider } from '@/components'
+import { Direction } from '@/types.d'
 import 'swiper/css'
 import 'swiper/css/free-mode'
 import 'swiper/css/navigation'
-
-import Divider from '@/components/Divider'
 
 const SkillsList = () => {
   const isTablet = useMediaQuery({ query: '(max-width: 768px)' })
   const isMobile = useMediaQuery({ query: '(max-width: 400px)' })
   return (
     <motion.div
-      variants={fadeIn('up', '', 0, 1)}
+      variants={fadeIn({
+        direction: Direction.up,
+        type: '',
+        delay: 0,
+        duration: 1
+      })}
       initial='hidden'
       whileInView='show'
       viewport={{ once: true, amount: 0.25 }}

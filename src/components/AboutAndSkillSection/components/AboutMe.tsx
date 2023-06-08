@@ -1,5 +1,6 @@
 import CoderIcon from '@/assets/svg/coder.svg'
 import Divider from '@/components/Divider.js'
+import { Direction } from '@/types.d'
 import { fadeIn } from '@/utils/motions.js'
 import { motion } from 'framer-motion'
 
@@ -7,7 +8,12 @@ const AboutMe = () => {
   return (
     <div className='relative flex flex-col items-center justify-between w-full px-12 pb-20 m-auto sm:px-20 sm:w-4/5 lg:flex-row '>
       <motion.div
-        variants={fadeIn('right', '', 0.5, 1)}
+        variants={fadeIn({
+          direction: Direction.right,
+          type: '',
+          delay: 0.5,
+          duration: 1
+        })}
         initial='hidden'
         whileInView='show'
         viewport={{ once: true, amount: 0.25 }}
@@ -28,7 +34,12 @@ const AboutMe = () => {
         </p>
       </motion.div>
       <motion.img
-        variants={fadeIn('left', '', 0, 1)}
+        variants={fadeIn({
+          direction: Direction.left,
+          type: '',
+          delay: 0,
+          duration: 1
+        })}
         initial='hidden'
         whileInView='show'
         viewport={{ once: true, amount: 0.25 }}
