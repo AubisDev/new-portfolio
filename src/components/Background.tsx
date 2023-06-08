@@ -14,11 +14,11 @@ const Background = (): React.JSX.Element => {
         stroke='currentColor'
         fill='none'
         stroke-linecap='butt'
-        className='stroke-secondary dark:stroke-[rgba(123,250,246.0.8)]  '
+        className='stroke-secondary dark:stroke-[rgb(123,250,246)]  '
         initial={{ pathLength: 0.5 }}
         animate={{
           pathLength: 1,
-          strokeOpacity: [0.8]
+          strokeOpacity: [0.5]
         }}
       >
         <motion.line x1='0' y1='0' x2='54' y2='54' opacity='1.00'></motion.line>
