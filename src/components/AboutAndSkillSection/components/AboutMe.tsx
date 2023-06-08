@@ -23,7 +23,7 @@ const AboutMe = () => {
           About me
         </h3>
         <Divider />
-        <p className='w-full lg:w-4/5 max-w-[700px] tracking-wide lg:tracking-wide lg:mt-4 lg:text-left text-center sm:text-sm !leading-[1.75em]'>
+        <p className='w-full lg:w-4/5 max-w-[700px] tracking-wide lg:tracking-wide lg:mt-4 lg:text-left text-center sm:text-sm !leading-[1.75em] font-semibold'>
           I am Electronic Engineering student and a motivated developer who has
           been working with JavaScript, React, TypeScript, and other frontend
           relevant technologies for about 1.5 years. I possess a strong
