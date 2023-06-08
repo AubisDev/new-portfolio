@@ -15,9 +15,9 @@ const Title = (): React.JSX.Element => {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.7 }}
       >
-        <h1 className='flex flex-col pb-4 text-2xl font-semibold text-center text-gray-600 juti xl:items-center xl:flex-row sm:text-4xl dark:text-white text-title sm:text-left'>
+        <h1 className='flex flex-col pb-4 text-2xl font-semibold text-center text-gray-600 juti xl:items-center xl:flex-row sm:text-4xl dark:text-white text-title lg:text-left'>
           Hi, I'm{' '}
-          <span className='text-3xl font-bold xl:-mt-2 xl:pl-3 sm:text-5xl text-secondary dark:text-skyblue drop-shadow-3xl'>
+          <span className='text-3xl font-bold text-center lg:text-left xl:-mt-2 xl:pl-3 sm:text-5xl text-secondary dark:text-skyblue drop-shadow-3xl'>
             Aubis Sanchez
           </span>
         </h1>
