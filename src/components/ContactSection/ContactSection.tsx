@@ -9,7 +9,7 @@ const ContactSection = () => {
   return (
     <section
       id='contact'
-      className='w-full h-screen m-auto h-min-screen bg-gray-200 dark:bg-lightgray pt-[10rem] sm:pt-0 sm:-mt-[3rem] flex flex-col lg:flex-row items-center justify-center z-[100]'
+      className='w-full h-screen m-auto h-min-screen bg-gray-200 dark:bg-lightgray pt-[60rem] sm:pt-0 sm:-mt-[3rem] flex flex-col lg:flex-row items-center justify-center z-[100]'
     >
       <motion.div
         variants={fadeIn({
