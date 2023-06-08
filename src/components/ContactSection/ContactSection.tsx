@@ -9,7 +9,7 @@ const ContactSection = () => {
   return (
     <section
       id='contact'
-      className='w-full h-screen m-auto h-min-screen bg-gray-200 dark:bg-lightgray -mt-[7rem] flex flex-col lg:flex-row items-center justify-center z-[100]'
+      className='w-full h-screen m-auto h-min-screen bg-gray-200 dark:bg-lightgray -mt-[3rem] flex flex-col lg:flex-row items-center justify-center z-[100]'
     >
       <motion.div
         variants={fadeIn({
@@ -21,9 +21,9 @@ const ContactSection = () => {
         initial='hidden'
         whileInView='show'
         viewport={{ once: true, amount: 0.25 }}
-        className='flex flex-col items-center lg:flex-col '
+        className='flex flex-col items-center lg:flex-col mt-[10rem] '
       >
-        <h3 className='flex flex-col w-4/5 text-3xl font-bold text-center text-gray-700 sm:w-full lg:text-4xl dark:text-white'>
+        <h3 className='flex flex-col w-4/5 text-3xl font-bold text-center text-gray-700 sm:w-full lg:text-4xl dark:text-white '>
           <span>Wanna get in touch?</span>{' '}
           <span>Contact me by filling this form!</span>
         </h3>
