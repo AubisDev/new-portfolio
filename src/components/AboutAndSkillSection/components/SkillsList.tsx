@@ -1,4 +1,4 @@
-import { skillData } from '../utils/skills.utility'
+import { skillData } from '../utils'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { FreeMode, Autoplay, Navigation } from 'swiper'
 import { motion } from 'framer-motion'
@@ -33,7 +33,7 @@ const SkillsList = () => {
         navigation={true}
         loop={true}
         autoplay={{
-          delay: 1000,
+          delay: 2500,
           disableOnInteraction: false
         }}
         pagination={{

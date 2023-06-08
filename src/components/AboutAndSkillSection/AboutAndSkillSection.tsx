@@ -1,5 +1,4 @@
-import AboutMe from './components/AboutMe'
-import SkillsList from './components/SkillsList'
+import { SkillsList, AboutMe } from './components'
 
 const AboutAndSkillSection = () => {
   return (

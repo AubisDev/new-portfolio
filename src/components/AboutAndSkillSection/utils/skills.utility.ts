@@ -6,7 +6,7 @@ import tsIcon from '@/assets/svg/typescript.svg'
 import nextjsIcon from '@/assets/images/nextjs.webp'
 import reduxIcon from '@/assets/svg/redux.svg'
 import gitIcon from '@/assets/svg/git.svg'
-import tailwindIcon from '@/assets/images/tailwind.webp'
+import tailwindIcon from '@/assets/svg/tailwind-css.svg'
 import zustandIcon from '@/assets/images/zustand.webp'
 import githubIcon from '@/assets/svg/github-icon.svg'
 

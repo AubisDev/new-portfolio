@@ -1,5 +1,4 @@
-import { Picture } from './components/Picture.js'
-import Title from './components/Title.js'
+import { Picture, Title } from './components'
 
 const HeroSection = (): React.JSX.Element => {
   return (

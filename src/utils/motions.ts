@@ -1,4 +1,8 @@
-export const textVariant = (delay) => {
+import { EffectOptions, Direction } from '@/types'
+
+export const textVariant = (
+  options: Omit<EffectOptions, 'direction' | 'type' | 'duration'>
+) => {
   return {
     hidden: {
       y: -50,
@@ -10,17 +14,27 @@ export const textVariant = (delay) => {
       transition: {
         type: 'spring',
         duration: 1.25,
-        delay: delay
+        delay: options.delay
       }
     }
   }
 }
 
-export const fadeIn = (direction, type, delay, duration) => {
+export const fadeIn = (options: EffectOptions) => {
   return {
     hidden: {
-      x: direction === 'left' ? 100 : direction === 'right' ? -100 : 0,
-      y: direction === 'up' ? 100 : direction === 'down' ? -100 : 0,
+      x:
+        options.direction === Direction.left
+          ? 100
+          : options.direction === Direction.right
+          ? -100
+          : 0,
+      y:
+        options.direction === Direction.up
+          ? 100
+          : options.direction === Direction.down
+          ? -100
+          : 0,
       opacity: 0
     },
     show: {
@@ -28,16 +42,16 @@ export const fadeIn = (direction, type, delay, duration) => {
       y: 0,
       opacity: 1,
       transition: {
-        type: type,
-        delay: delay,
-        duration: duration,
+        type: options.type,
+        delay: options.delay,
+        duration: options.duration,
         ease: 'easeOut'
       }
     }
   }
 }
 
-export const zoomIn = (delay, duration) => {
+export const zoomIn = (options: Omit<EffectOptions, 'direction' | 'type'>) => {
   return {
     hidden: {
       scale: 0,
@@ -48,27 +62,38 @@ export const zoomIn = (delay, duration) => {
       opacity: 1,
       transition: {
         type: 'tween',
-        delay: delay,
-        duration: duration,
+        delay: options.delay,
+        duration: options.duration,
         ease: 'easeOut'
       }
     }
   }
 }
 
-export const slideIn = (direction, type, delay, duration) => {
+export const slideIn = (options: EffectOptions) => {
   return {
     hidden: {
-      x: direction === 'left' ? '-50%' : direction === 'right' ? '100%' : 0,
-      y: direction === 'up' ? '100%' : direction === 'down' ? '100%' : 0
+      x:
+        options.direction === Direction.left
+          ? 100
+          : options.direction === Direction.right
+          ? -100
+          : 0,
+      y:
+        options.direction === Direction.up
+          ? 100
+          : options.direction === Direction.down
+          ? -100
+          : 0,
+      opacity: 0
     },
     show: {
       x: 0,
       y: 0,
       transition: {
-        type: type,
-        delay: delay,
-        duration: duration,
+        type: options.type,
+        delay: options.delay,
+        duration: options.duration,
         ease: 'easeOut'
       }
     }

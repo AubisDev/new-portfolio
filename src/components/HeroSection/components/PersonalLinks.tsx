@@ -1,6 +1,4 @@
-import DownloadIcon from '@/components/svgs/DownloadIcon'
-import GithubIcon from '@/components/svgs/GithubIcon'
-import LinkedinIcon from '@/components/svgs/LinkedinIcon'
+import { DownloadIcon, GithubIcon, LinkedinIcon } from '@/components/svgs'
 
 const GITHUB_LINK = 'https://github.com/AubisDev'
 const LINKEDIN_LINK = 'https://www.linkedin.com/in/aubis-sanchez-torres/'

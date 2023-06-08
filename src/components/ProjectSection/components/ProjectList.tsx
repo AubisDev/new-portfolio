@@ -1,9 +1,8 @@
 import { Project } from '@/types.js'
-import { staggerContainer } from '@/utils/motions.js'
-import { easeIn, motion } from 'framer-motion'
-import { projectList } from '../utils/projectData.js'
-import ProjectLinks from './ProjectLinks.js'
-import TechList from './TechList.js'
+import { staggerContainer } from '@/utils'
+import { motion } from 'framer-motion'
+import { projectList } from '../utils'
+import ProjectLinks from './ProjectLinks'
 
 const ProjectList = () => {
   return (
@@ -18,24 +17,32 @@ const ProjectList = () => {
         <motion.div
           key={project.title + i}
           variants={staggerContainer()}
-          className='w-4/5 sm:w-[40%] h-[200px] sm:h-[150px] lg:h-[250px] bg-gray-200 dark:bg-lightgray group/item duration-300 shadow-lg relative z-[100] '
+          className='w-4/5 sm:w-[40%] h-[200px] sm:h-[150px] lg:h-[275px] bg-gray-200 dark:bg-lightgray group/item duration-300 shadow-lg relative z-[100] '
         >
-          <div className='h-[85%] w-full'>
-            <img
-              src={project.desktopImg}
-              className='w-full h-full rounded-t-lg'
-              alt={project.title}
-            />
-          </div>
-          <div className='w-full flex items-center flex-row h-[15%] border-b border-l border-r border-gray-300  bg-gray-300 dark:border-white/10 dark:bg-gray-700  px-4'>
-            <p className='w-3/5 text-xs font-bold text-gray-800 capitalize dark:text-white lg:text-base '>
-              {project.title}
-            </p>
-            <ProjectLinks
-              repositoryLink={project.repositoryLink}
-              liveDemoLink={project.liveDemoLink}
-            />
-          </div>
+          {project.liveDemoLink ? (
+            <>
+              <div className='h-[85%] w-full'>
+                <img
+                  src={project.desktopImg}
+                  className='w-full h-full rounded-t-lg'
+                  alt={project.title}
+                />
+              </div>
+              <div className='w-full flex items-center flex-row h-[15%] border-b border-l border-r border-gray-300  bg-gray-300 dark:border-white/10 dark:bg-gray-700  px-4'>
+                <p className='w-3/5 text-xs font-bold text-gray-800 capitalize dark:text-white lg:text-base '>
+                  {project.title}
+                </p>
+                <ProjectLinks
+                  repositoryLink={project.repositoryLink}
+                  liveDemoLink={project.liveDemoLink}
+                />
+              </div>
+            </>
+          ) : (
+            <div className='flex items-center justify-center w-full h-full'>
+              <p className='text-3xl'>COMING SOON</p>
+            </div>
+          )}
         </motion.div>
       ))}
     </motion.div>

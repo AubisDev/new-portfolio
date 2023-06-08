@@ -1,6 +1,4 @@
-import GithubIcon from '@/components/svgs/GithubIcon'
-import LinkOutIcon from '@/components/svgs/LinkOutIcon'
-import PlayIcon from '@/components/svgs/PlayIcon'
+import { GithubIcon, LinkOutIcon, PlayIcon } from '@/components/svgs'
 
 interface ProjectLinksProps {
   liveDemoLink: string

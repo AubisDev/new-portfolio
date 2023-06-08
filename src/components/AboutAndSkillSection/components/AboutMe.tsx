@@ -1,7 +1,6 @@
 import CoderIcon from '@/assets/svg/coder.svg'
 import Divider from '@/components/Divider.js'
 import { fadeIn } from '@/utils/motions.js'
-
 import { motion } from 'framer-motion'
 
 const AboutMe = () => {
@@ -19,12 +18,13 @@ const AboutMe = () => {
         </h3>
         <Divider />
         <p className='w-full lg:w-4/5 max-w-[700px] tracking-wide lg:tracking-wide lg:mt-4 lg:text-left text-center sm:text-sm !leading-[1.75em]'>
-          I am a motivated developer who has been working with JavaScript,
-          React, TypeScript, and other relevant technologies for about 1.5
-          years. I possess a strong understanding of web development and am
-          committed to growth and continuous improvement. I learn daily to
-          deliver higher quality work. I actively seek new challenges and
-          opportunities to improve my skills and knowledge.
+          I am Electronic Engineering student and a motivated developer who has
+          been working with JavaScript, React, TypeScript, and other frontend
+          relevant technologies for about 1.5 years. I possess a strong
+          understanding of web development and am committed to growth and
+          continuous improvement. I learn daily to deliver higher quality work.
+          I actively seek new challenges and opportunities to improve my skills
+          and knowledge.
         </p>
       </motion.div>
       <motion.img

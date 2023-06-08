@@ -64,7 +64,7 @@ export const projectList: Project[] = [
       'uuid'
     ],
     repositoryLink: 'https://github.com/AubisDev/pokemon_game',
-    liveDemoLink: 'https://pokemon-game-phi.vercel.app/'
+    liveDemoLink: ''
   },
   {
     title: 'Araney e-commerce',
@@ -85,7 +85,7 @@ export const projectList: Project[] = [
       'Sweet-Alert2'
     ],
     repositoryLink: 'https://github.com/AubisDev/Araney-ecommerce',
-    liveDemoLink: 'https://araney-ecommerce.vercel.app/'
+    liveDemoLink: ''
   },
   {
     title: 'Pokemon battle simulator',
@@ -107,7 +107,7 @@ export const projectList: Project[] = [
       'uuid'
     ],
     repositoryLink: 'https://github.com/AubisDev/pokemon_game',
-    liveDemoLink: 'https://pokemon-game-phi.vercel.app/'
+    liveDemoLink: ''
   },
   {
     title: 'Araney e-commerce',
@@ -128,6 +128,6 @@ export const projectList: Project[] = [
       'Sweet-Alert2'
     ],
     repositoryLink: 'https://github.com/AubisDev/Araney-ecommerce',
-    liveDemoLink: 'https://araney-ecommerce.vercel.app/'
+    liveDemoLink: ''
   }
 ]

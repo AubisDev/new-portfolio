@@ -18,3 +18,17 @@ export interface IFormInput {
   contactPurpose: string
   contactDetails: string
 }
+
+enum Direction {
+  'left',
+  'right',
+  'up',
+  'down'
+}
+
+type EffectOptions = {
+  direction: Direction
+  type: string
+  delay: number
+  duration: number
+}
