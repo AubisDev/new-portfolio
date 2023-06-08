@@ -32,7 +32,7 @@ const Title = (): React.JSX.Element => {
             className='text-center text-gray-700 duration-300 sm:text-left dark:text-gray-300 hover:text-dark_orange dark:hover:text-skyblue'
             onClick={() => onClickToSection('contact')}
           >
-            Tell me about your project and how can I help you?
+            Tell me how can I help you?
           </button>
         </p>
         <PersonalLinks />
