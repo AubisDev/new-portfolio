@@ -9,7 +9,7 @@ const ContactSection = () => {
   return (
     <section
       id='contact'
-      className='w-full h-screen m-auto h-min-screen bg-gray-200 dark:bg-lightgray -mt-[3rem] flex flex-col lg:flex-row items-center justify-center z-[100]'
+      className='w-full h-screen m-auto h-min-screen bg-gray-200 dark:bg-lightgray pt-[10rem] sm:pt-0 sm:-mt-[3rem] flex flex-col lg:flex-row items-center justify-center z-[100]'
     >
       <motion.div
         variants={fadeIn({
@@ -21,7 +21,7 @@ const ContactSection = () => {
         initial='hidden'
         whileInView='show'
         viewport={{ once: true, amount: 0.25 }}
-        className='flex flex-col items-center lg:flex-col mt-[10rem] '
+        className='flex flex-col items-center lg:flex-col mt-[10rem] lg:mt-0'
       >
         <h3 className='flex flex-col w-4/5 text-3xl font-bold text-center text-gray-700 sm:w-full lg:text-4xl dark:text-white '>
           <span>Wanna get in touch?</span>{' '}
@@ -31,7 +31,7 @@ const ContactSection = () => {
         <img
           src={ContactIlustration}
           alt='contact ilustration'
-          className='-mt-10 mb-[6rem] '
+          className='-mt-10 '
         />
       </motion.div>
       <ContactForm />

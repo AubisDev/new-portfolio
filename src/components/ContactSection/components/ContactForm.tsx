@@ -54,7 +54,7 @@ const ContactForm = () => {
       initial='hidden'
       whileInView='show'
       viewport={{ once: true, amount: 0.25 }}
-      className='flex flex-col items-center w-4/5 mt-5 sm:w-1/2 lg:w-1/3 h-1/2 justify-evenly '
+      className='flex flex-col items-center w-4/5 mt-5 sm:w-1/2 lg:w-1/3 h-1/2 justify-evenly mb-[20rem] sm:mb[10rem] lg:mb-0 pt-[1rem]'
     >
       <input
         {...register('remitter', {
