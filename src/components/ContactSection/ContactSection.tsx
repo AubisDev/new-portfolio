@@ -31,7 +31,7 @@ const ContactSection = () => {
         <img
           src={ContactIlustration}
           alt='contact ilustration'
-          className='-mt-10'
+          className='-mt-10 mb-[6rem] '
         />
       </motion.div>
       <ContactForm />
