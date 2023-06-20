@@ -1,27 +1,17 @@
-import { motion } from 'framer-motion'
-
-const Background = (): React.JSX.Element => {
-  return (
-    <motion.svg
+<svg
       xmlns='http://www.w3.org/2000/svg'
       version='1.1'
       xmlnsXlink='http://www.w3.org/1999/xlink'
       viewBox='0 0 1422 800'
-      className='w-full h-full'
+      
     >
-      <motion.g
-        stroke-width='2'
-        stroke='currentColor'
+      <g
+        stroke-width='0.5'
+        stroke='rgba(123,250,246,1)'
         fill='none'
         stroke-linecap='butt'
-        className='stroke-secondary dark:stroke-[rgba(123,250,246,0.3)]  '
-        initial={{ pathLength: 0.5 }}
-        animate={{
-          pathLength: 1,
-          strokeOpacity: [0.5]
-        }}
       >
-        <motion.line x1='0' y1='0' x2='54' y2='54' opacity='1.00'></motion.line>
+        <line x1='0' y1='0' x2='54' y2='54' opacity='1.00'></line>
         <line x1='108' y1='0' x2='54' y2='54' opacity='1.00'></line>
         <line x1='108' y1='0' x2='162' y2='54' opacity='1.00'></line>
         <line x1='162' y1='0' x2='216' y2='54' opacity='1.00'></line>
@@ -426,8 +416,5 @@ const Background = (): React.JSX.Element => {
         <line x1='1350' y1='756' x2='1296' y2='810' opacity='0.50'></line>
         <line x1='1350' y1='756' x2='1404' y2='810' opacity='0.50'></line>
         <line x1='1404' y1='756' x2='1458' y2='810' opacity='0.50'></line>
-      </motion.g>
-    </motion.svg>
-  )
-}
-export default Background
+      </g>
+    </svg>

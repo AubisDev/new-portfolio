@@ -23,15 +23,14 @@ const AboutMe = () => {
           About me
         </h3>
         <Divider />
-        <p className='w-full lg:w-4/5 max-w-[700px] tracking-wide lg:tracking-wide lg:mt-4 lg:text-left text-center sm:text-sm !leading-[1.75em] font-semibold'>
+        <p className='w-full lg:w-4/5 max-w-[700px] tracking-wide lg:tracking-wide lg:mt-4 lg:text-left text-center sm:text-sm md:text-base xl:text-lg !leading-[1.75em] '>
           I am a Electronic Engineering student who happen to love coding. As a
-          developer I've been working with JavaScript, React, TypeScript, and
-          other frontend relevant technologies for about 1.5 years. I possess a
-          strong understanding of web development and am committed to growth and
+          developer. I've been working with JavaScript, React and other frontend
+          relevant technologies for about 1.5 years. I possess a strong
+          understanding of web development and am committed to growth and
           continuous improvement. I learn daily to deliver higher quality work.
           I actively seek new challenges and to improve my skills and knowledge
-          to land at my first opportunitie in IT. I'm not afraid to learn new
-          things. Also, i love video games so if you need a partner, here i am.
+          to land at my first opportunitie in IT.
         </p>
       </motion.div>
       <motion.img

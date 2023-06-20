@@ -17,7 +17,7 @@ const ProjectList = () => {
         <motion.div
           key={project.title + i}
           variants={staggerContainer()}
-          className='w-4/5 sm:w-[40%] h-[200px] sm:h-[150px] lg:h-[275px] bg-gray-200 dark:bg-lightgray group/item duration-300 shadow-lg relative z-10 '
+          className='w-4/5 sm:w-[40%] h-[200px] sm:h-[150px] lg:h-[275px] xl:h-[350px] bg-gray-200 dark:bg-lightgray group/item duration-300 shadow-lg relative z-10 '
         >
           {project.liveDemoLink ? (
             <>

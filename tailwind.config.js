@@ -19,7 +19,8 @@ export default {
         normal: ['Source Sans Pro', 'sans-serif']
       },
       backgroundImage: {
-        projectbg: "url('/src/assets/svg/bgpattern.svg')"
+        projectbg: "url('/src/assets/svg/bgpattern.svg')",
+        projectbg_light: "url('/src/assets/svg/bgpattern_light.svg')"
       },
       boxShadow: {
         glowingUnderline: '0px 0px 2px 2px yellow',
